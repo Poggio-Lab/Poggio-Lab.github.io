@@ -1,3 +1,4 @@
+import React from "react"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft, Calendar, User, ExternalLink } from "lucide-react"
@@ -17,6 +18,26 @@ export async function generateStaticParams() {
     return slugs.map((slug) => ({
         slug,
     }))
+}
+
+function getTextContent(children: React.ReactNode): string {
+    return React.Children.toArray(children)
+        .map(child => {
+            if (typeof child === 'string') return child;
+            if (typeof child === 'number') return String(child);
+            if (React.isValidElement(child)) return getTextContent((child.props as { children?: React.ReactNode }).children);
+            return '';
+        })
+        .join('');
+}
+
+function slugify(text: string): string {
+    return text
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
 }
 
 export default async function BlogPost(context: { params: Promise<{ slug: string }> }) {
@@ -99,8 +120,14 @@ export default async function BlogPost(context: { params: Promise<{ slug: string
                                     );
                                 },
                                 // Style other elements if needed
-                                h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mt-12 mb-6" {...props} />,
-                                h2: ({ node, ...props }) => <h2 className="text-xl font-semibold mt-10 mb-5" {...props} />,
+                                h1: ({ node, children, ...props }) => {
+                                    const id = slugify(getTextContent(children));
+                                    return <h1 id={id} className="text-3xl font-bold mt-12 mb-6" {...props}>{children}</h1>;
+                                },
+                                h2: ({ node, children, ...props }) => {
+                                    const id = slugify(getTextContent(children));
+                                    return <h2 id={id} className="text-xl font-semibold mt-10 mb-5" {...props}>{children}</h2>;
+                                },
                                 a: ({ node, ...props }) => <a className="text-primary hover:underline" {...props} />,
                                 // Ensure math is rendered block-level if needed (though katex handles this usually)
                                 div: ({ node, className, ...props }) => {
