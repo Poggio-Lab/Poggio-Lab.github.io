@@ -1,5 +1,5 @@
 # Beneficial Misalignment: Why We Shouldn't Always Align AI to Humans
-Date: Mar 16, 2026
+Date: Mar 17, 2026
 By Brian Cheung
 
 In the rapidly evolving field of NeuroAI, a significant amount of energy is dedicated to 'alignment', the idea that representations from artificial intelligence should converge towards biological intelligence (Yamins et al. (2014)). The prevailing measuring stick for progress is often how closely an artificial neural network mimics the biological brain. The logic is compelling: the brain is our only proof of concept for general intelligence, so the closer our machines get to biological representations, the closer they must be to true intelligence.
