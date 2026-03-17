@@ -21,7 +21,7 @@ const seminars = [
         date: "March 16, 2026",
         time: "4:00 PM ET",
         speaker: "Blaise Agüera y Arcas",
-        affiliation: "Google",
+        affiliation: "Google, Paradigms of Intelligence",
         title: "Intelligence as Prediction: Cybernetics, LLMs, and Sociality",
         location: "Singleton Auditorium (46-3002)",
     },
