@@ -28,6 +28,13 @@
     "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM%20Memo%20158.pdf"
   },
   {
+    "title": "On efficiently computable functions, deep networks and sparse compositionality",
+    "authors": "Poggio, T. A. & Xu, M.",
+    "venue": "CBMM Publication",
+    "year": "2025",
+    "link": "https://cbmm.mit.edu/sites/default/files/publications/Deep_sparse_networks_approximate_efficiently_computable_functions_0.pdf"
+  },
+  {
     "title": "Position: A Theory of Deep Learning Must Include Compositional Sparsity",
     "authors": "Danhofer, D. A., D\u2019Ascenzo, D., Dubach, R. & Poggio, T.",
     "venue": "CBMM Publication",
