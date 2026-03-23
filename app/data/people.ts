@@ -18,6 +18,12 @@ export const peopleData: Section[] = [
         type: "grid",
         members: [
             { name: "Dr. Tomaso A. Poggio", affiliation: "Massachusetts Institute of Technology", image: "/people/poggio-240x300.jpg" },
+        ]
+    },
+    {
+        title: "Faculty Assistant",
+        type: "grid",
+        members: [
             { name: "Emma Downs", role: "Administrative Assistant to Dr. Tomaso Poggio", affiliation: "Massachusetts Institute of Technology", image: "/people/emma-downs.jpg" },
         ]
     },
