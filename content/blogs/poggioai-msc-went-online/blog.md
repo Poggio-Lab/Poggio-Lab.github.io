@@ -2,7 +2,14 @@
 Date: Mar 21, 2026
 By Pierfrancesco Beneventano on behalf of the PoggioAI Team
 
-PoggioAI/MSc is now online at [PoggioAI.github.io](https://poggioai.github.io/). You can read the [technical report](https://poggioai.github.io/papers/poggioai-msc-v0.pdf) or browse the [GitHub repository](https://github.com/PoggioAI/PoggioAI_MSc/tree/MSc_Prod). This first public release is an open-source, customizable, modular multi-agent system for academic research workflows, with a current emphasis on machine learning theory and nearby quantitative fields.
+<!-- resource-links-start -->
+- **Paper:** [https://poggioai.github.io/papers/poggioai-msc-v0.pdf](https://poggioai.github.io/papers/poggioai-msc-v0.pdf)
+- **Website:** [https://poggioai.github.io](https://poggioai.github.io)
+- **Github:** [https://github.com/PoggioAI/PoggioAI_MSc/tree/MSc_Prod](https://github.com/PoggioAI/PoggioAI_MSc/tree/MSc_Prod)
+- **Join us on Discord:** [discord.gg/Pz7spPPY](https://discord.gg/Pz7spPPY)
+<!-- resource-links-end -->
+
+PoggioAI/MSc is now online. This first public release is an open-source, customizable, modular multi-agent system for academic research workflows, with a current emphasis on machine learning theory and nearby quantitative fields.
 
 Our goal is not autonomous scientific ideation, and it is not fully automated research. The target is narrower and more practical: reduce by orders of magnitude the human steering needed to take a specified hypothesis to a literature-grounded, mathematically established, experimentally supported, submission-oriented manuscript draft.
 

@@ -57,10 +57,15 @@ export async function getPostData(slug: string) {
     }
 
     const content = lines.slice(contentStartIndex).join('\n');
+    const excerptSource = content.replace(
+        /<!--\s*resource-links-start\s*-->[\s\S]*?<!--\s*resource-links-end\s*-->/g,
+        ''
+    );
 
     // Generate a plain-text excerpt for list and card views.
-    const plainTextContent = content
+    const plainTextContent = excerptSource
         .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/<!--[\s\S]*?-->/g, '')
         .replace(/[`#*_>~-]/g, '')
         .replace(/\s+/g, ' ')
         .trim();
