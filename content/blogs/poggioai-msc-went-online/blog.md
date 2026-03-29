@@ -1,6 +1,6 @@
-# PoggioAI/MSc Went Online
+# pAI/MSc Went Online
 Date: Mar 21, 2026
-By Pierfrancesco Beneventano on behalf of the PoggioAI Team
+By Pierfrancesco Beneventano on behalf of the pAI Team
 
 <!-- resource-links-start -->
 - **Paper:** [https://poggioai.github.io/papers/poggioai-msc-v0.pdf](https://poggioai.github.io/papers/poggioai-msc-v0.pdf)
@@ -9,7 +9,7 @@ By Pierfrancesco Beneventano on behalf of the PoggioAI Team
 - **Join us on Discord:** [discord.gg/Pz7spPPY](https://discord.gg/Pz7spPPY)
 <!-- resource-links-end -->
 
-PoggioAI/MSc is now online. This first public release is an open-source, customizable, modular multi-agent system for academic research workflows, with a current emphasis on machine learning theory and nearby quantitative fields.
+pAI/MSc is now online. This first public release is an open-source, customizable, modular multi-agent system for academic research workflows, with a current emphasis on machine learning theory and nearby quantitative fields.
 
 Our goal is not autonomous scientific ideation, and it is not fully automated research. The target is narrower and more practical: reduce by orders of magnitude the human steering needed to take a specified hypothesis to a literature-grounded, mathematically established, experimentally supported, submission-oriented manuscript draft.
 
@@ -23,7 +23,7 @@ Our view, reflected in the report, is that the right scientific question is not 
 
 In practice, we think many researchers want something much simpler than "fully autonomous science." They want a junior collaborator that can take a strong human idea, follow guidance, and help push it toward a serious paper draft. Today, that still often takes on the order of 10^2 to 10^3 prompts with frontier models and agentic tools, if it works at all.
 
-PoggioAI/MSc is our attempt to compress that process. The practical target is:
+pAI/MSc is our attempt to compress that process. The practical target is:
 
 - start from a strong human-developed hypothesis
 - keep the bar at serious academic quality

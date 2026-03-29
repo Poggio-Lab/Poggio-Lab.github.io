@@ -22,13 +22,13 @@
   <text x="137" y="84" text-anchor="middle" fill="#F9FAFB" font-size="18" font-family="Georgia, serif" letter-spacing="1.5">NEWS</text>
 
   <text x="72" y="190" fill="#111827" font-size="58" font-family="Georgia, serif" font-weight="700">
-    <tspan x="72" dy="0">PoggioAI / MSc</tspan>
+    <tspan x="72" dy="0">pAI / MSc</tspan>
     <tspan x="72" dy="78">Went Online</tspan>
   </text>
 
   <text x="74" y="350" fill="#374151" font-size="28" font-family="Helvetica, Arial, sans-serif">
     <tspan x="74" dy="0">Project website, technical report, and GitHub</tspan>
-    <tspan x="74" dy="38">are now live from the PoggioAI team at MIT.</tspan>
+    <tspan x="74" dy="38">are now live from the pAI team at MIT.</tspan>
   </text>
 
   <g opacity="0.95">
