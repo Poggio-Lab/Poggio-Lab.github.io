@@ -57,9 +57,19 @@ export async function getPostData(slug: string) {
     }
 
     const content = lines.slice(contentStartIndex).join('\n');
+    const excerptSource = content.replace(
+        /<!--\s*resource-links-start\s*-->[\s\S]*?<!--\s*resource-links-end\s*-->/g,
+        ''
+    );
 
-    // Generate excerpt (first 200 chars, removing markdown formatting)
-    const excerpt = content.slice(0, 200).replace(/[#*]/g, '').trim() + '...';
+    // Generate a plain-text excerpt for list and card views.
+    const plainTextContent = excerptSource
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/[`#*_>~-]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    const excerpt = plainTextContent.slice(0, 200).trim() + '...';
 
     return {
         slug,

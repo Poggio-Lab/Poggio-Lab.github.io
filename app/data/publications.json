@@ -1,10 +1,31 @@
 [
   {
+    "title": "PoggioAI/MSc: ML Theory Research with Humans on the Loop",
+    "authors": "Abdelmoneum, M., Beneventano, P. & Poggio, T.",
+    "venue": "Technical Report (March 23, 2026)",
+    "year": "2026",
+    "link": "https://poggioai.github.io/papers/poggioai-msc-v0.pdf"
+  },
+  {
+    "title": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
+    "authors": "Cortesi, F. V., Iannone, G., Crippa, G., Poggio, T. & Beneventano, P.",
+    "venue": "Preprint (March 3, 2026)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2603.02620"
+  },
+  {
     "title": "A cortical motif for learning with vectorized errors",
     "authors": "Liao, Q., Ziyin, L., Gan, Y., Cheung, B., Harnett, M. & Poggio, T.",
     "venue": "Preprint (February 25, 2026)",
     "year": "2026",
     "link": "/assets/NeuroSGD.pdf"
+  },
+  {
+    "title": "Does SGD Seek Flatness or Sharpness? An Exactly Solvable Model",
+    "authors": "Xu, Y., Beneventano, P., Chuang, I. & Ziyin, L.",
+    "venue": "Preprint (February 4, 2026)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2602.05065"
   },
   {
     "title": "Associative Memory as the Core of Intelligence in Technology and Evolution",
@@ -26,6 +47,13 @@
     "venue": "CBMM Publication",
     "year": "2025",
     "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM%20Memo%20158.pdf"
+  },
+  {
+    "title": "On efficiently computable functions, deep networks and sparse compositionality",
+    "authors": "Poggio, T. A. & Xu, M.",
+    "venue": "CBMM Publication",
+    "year": "2025",
+    "link": "https://cbmm.mit.edu/sites/default/files/publications/Deep_sparse_networks_approximate_efficiently_computable_functions_0.pdf"
   },
   {
     "title": "Position: A Theory of Deep Learning Must Include Compositional Sparsity",
