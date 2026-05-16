@@ -2,7 +2,7 @@ import { Calendar, Clock, MapPin, User } from "lucide-react"
 
 const seminars = [
     {
-        date: "March 2, 2025",
+        date: "March 2, 2026",
         time: "4:00 PM ET",
         speaker: "Tomaso Poggio",
         affiliation: "MIT, McGovern Institute",
@@ -10,37 +10,29 @@ const seminars = [
         location: "McGovern Reading Room (46-5165)",
     },
     {
-        date: "March 9, 2025",
+        date: "March 9, 2026",
         time: "4:00 PM ET",
         speaker: "Adam Marblestone",
         affiliation: "Convergent Research",
-        title: "The Missing Fundamentals",
+        title: "Unlocking Whole Brain Neuroscience and Neuro-AI",
         location: "McGovern Reading Room (46-5165)",
     },
     {
-        date: "March 16, 2025",
+        date: "March 16, 2026",
         time: "4:00 PM ET",
         speaker: "Blaise Agüera y Arcas",
-        affiliation: "Google",
+        affiliation: "Google, Paradigms of Intelligence",
         title: "Intelligence as Prediction: Cybernetics, LLMs, and Sociality",
-        location: "McGovern Reading Room (46-5165)",
+        location: "Singleton Auditorium (46-3002)",
     },
     {
-        date: "March 30, 2025",
+        date: "March 30, 2026",
         time: "4:00 PM ET",
         speaker: "Joe Bates",
         affiliation: "Singular Computing",
         title: "Billion Core Science",
         location: "McGovern Reading Room (46-5165)",
-    },
-    {
-        date: "April 27, 2025",
-        time: "4:00 PM ET",
-        speaker: "Ed Boyden",
-        affiliation: "MIT",
-        title: "New Brain Mapping Tools: How Might Molecularly Annotated Connectomes Contribute to AI",
-        location: "McGovern Reading Room (46-5165)",
-    },
+    }
 ]
 
 export function SeminarTimeline() {

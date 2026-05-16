@@ -21,6 +21,13 @@ export const peopleData: Section[] = [
         ]
     },
     {
+        title: "Faculty Assistant",
+        type: "grid",
+        members: [
+            { name: "Emma Downs", role: "Administrative Assistant to Dr. Tomaso Poggio", affiliation: "Massachusetts Institute of Technology", image: "/people/emma-downs.jpg" },
+        ]
+    },
+    {
         title: "Postdoctoral Associates",
         type: "grid",
         members: [
@@ -52,6 +59,8 @@ export const peopleData: Section[] = [
         members: [
             { name: "Liu Ziyin", image: "/people/ziyinl_pic-300x300.png" },
             { name: "John Gabrieli Buchet", affiliation: "Johns Hopkins University", image: "/people/John.jpg" },
+            { name: "Riccardo Neumarker", role: "Visiting Researcher", image: "/people/riccardo_n.jpeg" },
+            { name: "Emanuele Rimoldi", role: "Visiting Researcher", image: "/people/emanuele_r.jpg" },
         ]
     },
 
