@@ -38,7 +38,7 @@ const seminars = [
         time: "12:00 PM ET",
         speaker: "Steven Byrnes",
         affiliation: "Astera Institute",
-        title: "Challenges for safe and beneficial brain-like artificial general intelligence",
+        title: "Challenges for Safe and Beneficial Brain-Like Artificial General Intelligence",
         location: "McGovern Reading Room (46-5165)",
     }
 ]
