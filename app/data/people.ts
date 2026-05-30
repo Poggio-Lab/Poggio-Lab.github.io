@@ -43,6 +43,7 @@ export const peopleData: Section[] = [
             { name: "Marc Gong Bacvanski", image: "/people/marc-300x300.jpeg" },
             { name: "Yulu Gan", image: "/people/yulu.jpeg" },
             { name: "David Koplow", image: "/people/david.jpeg" },
+            { name: "Mahmoud Abdelmoneum", affiliation: "MIT", image: "/people/mahmoud_a.jpg" },
 
         ]
     },
@@ -61,7 +62,6 @@ export const peopleData: Section[] = [
             { name: "John Gabrieli Buchet", affiliation: "Johns Hopkins University", image: "/people/John.jpg" },
             { name: "Riccardo Neumarker", role: "Visiting Researcher", image: "/people/riccardo_n.jpeg" },
             { name: "Emanuele Rimoldi", role: "Visiting Researcher", image: "/people/emanuele_r.jpg" },
-            { name: "Mahmoud Abdelmoneum", affiliation: "MIT", image: "/people/mahmoud_a.jpg" },
         ]
     },
 
