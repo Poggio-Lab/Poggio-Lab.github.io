@@ -32,6 +32,14 @@ const seminars = [
         affiliation: "Singular Computing",
         title: "Billion Core Science",
         location: "McGovern Reading Room (46-5165)",
+    }, 
+    {
+        date: "May 26, 2026",
+        time: "12:00 PM ET",
+        speaker: "Steven Byrnes",
+        affiliation: "Astera Institute",
+        title: "Challenges for Safe and Beneficial Brain-Like Artificial General Intelligence",
+        location: "McGovern Reading Room (46-5165)",
     }
 ]
 

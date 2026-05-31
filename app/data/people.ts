@@ -43,6 +43,7 @@ export const peopleData: Section[] = [
             { name: "Marc Gong Bacvanski", image: "/people/marc-300x300.jpeg" },
             { name: "Yulu Gan", image: "/people/yulu.jpeg" },
             { name: "David Koplow", image: "/people/david.jpeg" },
+            { name: "Mahmoud Abdelmoneum", affiliation: "MIT", image: "/people/mahmoud_a.jpg" },
 
         ]
     },

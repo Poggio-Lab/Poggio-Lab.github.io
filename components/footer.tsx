@@ -36,6 +36,11 @@ export function Footer() {
                   Blogposts and Updates
                 </Link>
               </li>
+              <li>
+                <Link href="/9-520" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  9.520 Course Hub
+                </Link>
+              </li>
             </ul>
           </div>
 
