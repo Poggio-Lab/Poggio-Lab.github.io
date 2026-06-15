@@ -1,5 +1,26 @@
 [
   {
+    "title": "A Universal Compression Theory: Lottery Ticket Hypothesis and Superpolynomial Scaling Laws",
+    "authors": "Wang, H., Luo, D., Poggio, T., Chuang, I. L. & Ziyin, L.",
+    "venue": "ICLR 2026",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2510.00504"
+  },
+  {
+    "title": "Momentum Further Constrains Sharpness at the Edge of Stochastic Stability",
+    "authors": "Andreyev, A., Ananthkumar, A., Walden, M., Poggio, T. & Beneventano, P.",
+    "venue": "Preprint (April 15, 2026)",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2604.14108"
+  },
+  {
+    "title": "Emergence of Hebbian Dynamics in Regularized Non-Local Learners",
+    "authors": "Koplow, D., Poggio, T. & Ziyin, L.",
+    "venue": "ICML 2026",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2505.18069"
+  },
+  {
     "title": "Stabilizing Continuous-Time Kolen–Pollack Learning with a Scale-Balance Condition",
     "authors": "Bacvanski, M. G., Ziyin, L. & Poggio, T.",
     "venue": "High-dimensional Learning Dynamics (HiLD) Workshop at ICML 2026",
@@ -49,6 +70,27 @@
     "link": "https://cbmm.mit.edu/sites/default/files/publications/Perspective_SPCOMP-9.pdf"
   },
   {
+    "title": "Parameter Symmetry Breaking and Restoration Determines the Hierarchical Learning in AI Systems",
+    "authors": "Ziyin, L., Xu, Y., Poggio, T. & Chuang, I.",
+    "venue": "Preprint (2025)",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2502.05300"
+  },
+  {
+    "title": "Heterosynaptic Circuits Are Universal Gradient Machines",
+    "authors": "Ziyin, L., Chuang, I. & Poggio, T.",
+    "venue": "Preprint (2025)",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2505.02248"
+  },
+  {
+    "title": "Topological Invariance and Breakdown in Learning",
+    "authors": "Yang, Y., Poggio, T., Chuang, I. & Ziyin, L.",
+    "venue": "Preprint (2025)",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2510.02670"
+  },
+  {
     "title": "Multiplicative Regularization Generalizes Better Than Additive Regularization",
     "authors": "Dubach, R., Abdallah, M. S. & Poggio, T.",
     "venue": "CBMM Publication",
@@ -64,7 +106,7 @@
   },
   {
     "title": "Position: A Theory of Deep Learning Must Include Compositional Sparsity",
-    "authors": "Danhofer, D. A., D\u2019Ascenzo, D., Dubach, R. & Poggio, T.",
+    "authors": "Danhofer, D. A., D’Ascenzo, D., Dubach, R. & Poggio, T.",
     "venue": "CBMM Publication",
     "year": "2025",
     "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM%20Memo%20159.pdf"
@@ -280,7 +322,7 @@
     "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-114.pdf"
   },
   {
-    "title": "From Marr\u2019s Vision to the Problem of Human Intelligence",
+    "title": "From Marr’s Vision to the Problem of Human Intelligence",
     "authors": "Poggio, T.",
     "venue": "CBMM Publication",
     "year": "2021",
@@ -722,7 +764,7 @@
   },
   {
     "title": "Group Invariant Deep Representations for Image Instance Retrieval",
-    "authors": "Mor\u00e8re, O. et al.",
+    "authors": "Morère, O. et al.",
     "venue": "CBMM Publication",
     "year": "2016",
     "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-043.pdf"
@@ -757,7 +799,7 @@
   },
   {
     "title": "Nested Invariance Pooling and RBM Hashing for Image Instance Retrieval",
-    "authors": "Mor\u00e8re, O., Veillard, A., Chandrasekhar, V. & Poggio, T.",
+    "authors": "Morère, O., Veillard, A., Chandrasekhar, V. & Poggio, T.",
     "venue": "arXiv.org",
     "year": "2016",
     "link": "https://cbmm.mit.edu/sites/default/files/publications/1603.04595.pdf"
@@ -1043,7 +1085,7 @@
     "link": "https://cbmm.mit.edu/sites/default/files/publications/Villa-Rosasco_Poggio_On-Learnability_bookchapter_authordraft.pdf"
   },
   {
-    "title": "NSF Science and Technology Centers \u2013 The Class of 2013",
+    "title": "NSF Science and Technology Centers – The Class of 2013",
     "authors": "Lattman, E., Poggio, T. & Westervelt, R.",
     "venue": "CBMM Publication",
     "year": "2013",
@@ -1129,7 +1171,7 @@
   {
     "title": "The Levels of Understanding framework, revised",
     "authors": "Poggio, T",
-    "venue": "Perception, volume 41, pages 1017 \u2013 1023, December 2012 doi:10.1068/p7299",
+    "venue": "Perception, volume 41, pages 1017 – 1023, December 2012 doi:10.1068/p7299",
     "year": "2012",
     "link": "https://pubmed.ncbi.nlm.nih.gov/23409366/"
   },
@@ -1143,7 +1185,7 @@
   {
     "title": "GURLS: a Toolbox for Regularized Least Squares Learning",
     "authors": "Tacchetti, A., P. Mallapragada, M. Santoro, and L. Rosasco",
-    "venue": "MIT-CSAIL-TR-2012-003, CBCL-306, Massachusetts Institute of Technology, Cambridge, MA, January, 2012Previous version: GURLS: a Toolbox for Large Scale Multiclass Learning, Workshop: \u201cBig Learning: Algorithms, Systems, and Tools for Learning at Scale\u201d at NIPS 2011, December 16-17 2011, Sierra Nevada, Spain",
+    "venue": "MIT-CSAIL-TR-2012-003, CBCL-306, Massachusetts Institute of Technology, Cambridge, MA, January, 2012Previous version: GURLS: a Toolbox for Large Scale Multiclass Learning, Workshop: “Big Learning: Algorithms, Systems, and Tools for Learning at Scale” at NIPS 2011, December 16-17 2011, Sierra Nevada, Spain",
     "year": "2012",
     "link": "http://hdl.handle.net/1721.1/69034"
   },
@@ -1212,8 +1254,8 @@
   },
   {
     "title": "HMDB: A Large Video Database for Human Motion Recognition",
-    "authors": "Kuehne, T., H. Jhuang, E. Garrote, T. Poggio, and T. Serre, \u201c",
-    "venue": "\u201d ICCV 2011, Click here for software documentation",
+    "authors": "Kuehne, T., H. Jhuang, E. Garrote, T. Poggio, and T. Serre, “",
+    "venue": "” ICCV 2011, Click here for software documentation",
     "year": "2011",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/Kuehne_etal_iccv11.pdf"
   },
@@ -1318,7 +1360,7 @@
   {
     "title": "Automated home-cage behavioural phenotyping of mice",
     "authors": "Jhuang, H., E. Garrote, J. Mutch, X. Yu, V. Khilnani, T. Poggio, A.D. Steele, and T. Serre",
-    "venue": "Nature Communications,\u201d 1, Article 68, [doi: 10.1038/ncomms1064], September 7, 2010. Click here for software documentation",
+    "venue": "Nature Communications,” 1, Article 68, [doi: 10.1038/ncomms1064], September 7, 2010. Click here for software documentation",
     "year": "2010",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/Jhuang_Garrote_Poggio_Steele_Serre_Ncomms_10.pdf"
   },
@@ -1365,9 +1407,9 @@
     "link": "http://dspace.mit.edu/handle/1721.1/60379"
   },
   {
-    "title": "Reading the mind\u2019s eye: Decoding object information during mental imagery from fMRI patterns.",
-    "authors": "Reddy, L., N. Tsuchyia and T. Serre, \u201c",
-    "venue": "\u201d Neuroimage, 50, pp. 818-825, Feb 2010.doi:10.1167/9.8.782",
+    "title": "Reading the mind’s eye: Decoding object information during mental imagery from fMRI patterns.",
+    "authors": "Reddy, L., N. Tsuchyia and T. Serre, “",
+    "venue": "” Neuroimage, 50, pp. 818-825, Feb 2010.doi:10.1167/9.8.782",
     "year": "2010",
     "link": "https://jov.arvojournals.org/article.aspx?articleid=2136239"
   },
@@ -1380,27 +1422,27 @@
   },
   {
     "title": "Prefrontal cortex activity during flexible categorization",
-    "authors": "Roy, J.E., Riesenhuber, M., T. Poggio and E.K. Miller, \u201c",
-    "venue": "\u201c. Journal of Neuroscience, 30:8519-8528, 2010",
+    "authors": "Roy, J.E., Riesenhuber, M., T. Poggio and E.K. Miller, “",
+    "venue": "“. Journal of Neuroscience, 30:8519-8528, 2010",
     "year": "2010",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/Roy_Riesenhuber_Poggio_Millerj_neurosci_2010.pdf"
   },
   {
     "title": "A Neuromorphic Approach to Computer Vision",
-    "authors": "Serre, T. and T. Poggio \u201c",
-    "venue": "\u201d, Communications of the ACM (online), Vol . 53, No. 10, October 2010 [doi :10.1145/1831407.1831425]",
+    "authors": "Serre, T. and T. Poggio “",
+    "venue": "”, Communications of the ACM (online), Vol . 53, No. 10, October 2010 [doi :10.1145/1831407.1831425]",
     "year": "2010",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/serre-poggio_-ANeuromorphicApproachtoComputerVision_CACM_Oct2010.pdf"
   },
   {
     "title": "Learning and Invariance in a Family of Hierarchical Kernels",
-    "authors": "Wibisono, A., J. Bouvrie, L. Rosasco, and T. Poggio, \u201c",
-    "venue": "\u201c, MIT-CSAIL-TR-2010-035 / CBCL-290, Massachusetts Institute of Technology, Cambridge, MA, July 30, 2010",
+    "authors": "Wibisono, A., J. Bouvrie, L. Rosasco, and T. Poggio, “",
+    "venue": "“, MIT-CSAIL-TR-2010-035 / CBCL-290, Massachusetts Institute of Technology, Cambridge, MA, July 30, 2010",
     "year": "2010",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/Wibisono_MIT-CSAIL-TR-2010-035-CBCL-290.pdf"
   },
   {
-    "title": "CNS (\u201cCortical Network Simulator\u201d): a GPU-based framework for simulating cortically-organized networks",
+    "title": "CNS (“Cortical Network Simulator”): a GPU-based framework for simulating cortically-organized networks",
     "authors": "Mutch, J., Knoblich, U. & Poggio, T.",
     "venue": "CBMM Publication",
     "year": "2010",
@@ -1414,7 +1456,7 @@
     "link": "https://cbmm.mit.edu/publications/biblio?f%5Bauthor%5D=43&page=7"
   },
   {
-    "title": "\u201cFully Automatic Calibration of LIDAR and Video Streams From a Vehicle\u201d",
+    "title": "“Fully Automatic Calibration of LIDAR and Video Streams From a Vehicle”",
     "authors": "Bileschi, S",
     "venue": "3-D Digital Imaging and Modeling (3DIM ICCV Workshop), 2009",
     "year": "2009",
@@ -1422,90 +1464,90 @@
   },
   {
     "title": "Notes on the Shannon Entropy of the Neural Response",
-    "authors": "Bouvrie, J., L. Rosasco, G. Shakhnarovich, and S. Smale, \u201c",
-    "venue": "\u201c, CBCL-281, MIT-CSAIL-TR-2009-049, Massachusetts Institute of Technology, Cambridge, MA, October 9, 2009",
+    "authors": "Bouvrie, J., L. Rosasco, G. Shakhnarovich, and S. Smale, “",
+    "venue": "“, CBCL-281, MIT-CSAIL-TR-2009-049, Massachusetts Institute of Technology, Cambridge, MA, October 9, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49425/MIT-CSAIL-TR-2009-049.pdf?sequence=1"
   },
   {
     "title": "On Invariance in Hierarchical Models",
-    "authors": "Bouvrie, J. , L. Rosasco, and T. Poggio. \u201c",
-    "venue": "\u201c. Advances in Neural Information Processing Systems (NIPS) 22, 2009",
+    "authors": "Bouvrie, J. , L. Rosasco, and T. Poggio. “",
+    "venue": "“. Advances in Neural Information Processing Systems (NIPS) 22, 2009",
     "year": "2009",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/bouvrie-rosasco_inv_nips09.pdf"
   },
   {
     "title": "10.3949/ccjm.76.s2.16",
-    "authors": "Cao, R., B.T. Higashikubo, J.A. Cardin, U. Knoblich, R. Ramos, M.T. Nelson, C.I. Moore and J.C. Brumberg. \u201cPinacidil induces vascular dilation and hyperemia in vivo and does not impact biophysical properties of neurons and astrocytes in vitro.\u201d Cleve. Clin. J. Med. 76, 2009 [doi:",
+    "authors": "Cao, R., B.T. Higashikubo, J.A. Cardin, U. Knoblich, R. Ramos, M.T. Nelson, C.I. Moore and J.C. Brumberg. “Pinacidil induces vascular dilation and hyperemia in vivo and does not impact biophysical properties of neurons and astrocytes in vitro.” Cleve. Clin. J. Med. 76, 2009 [doi:",
     "venue": "]",
     "year": "2009",
     "link": "http://dx.doi.org/10.3949/ccjm.76.s2.16"
   },
   {
     "title": "Driving fast-spiking cells induces gamma rhythm and controls sensory responses.",
-    "authors": "Cardin, J.A., M. Carl\u00e9n, K. Meletis, U. Knoblich, F. Zhang, K. Deisseroth, L.H. Tsai and C.I. Moore. \u201c",
-    "venue": "\u201d Nature 459(7247):663-667, 2009 [doi: 10.1038/nature08002]",
+    "authors": "Cardin, J.A., M. Carlén, K. Meletis, U. Knoblich, F. Zhang, K. Deisseroth, L.H. Tsai and C.I. Moore. “",
+    "venue": "” Nature 459(7247):663-667, 2009 [doi: 10.1038/nature08002]",
     "year": "2009",
     "link": "http://www.nature.com/nature/journal/v459/n7247/full/nature08002.html"
   },
   {
-    "title": "\u201cA Bayesian inference theory of attention: neuroscience and algorithms\u201d",
+    "title": "“A Bayesian inference theory of attention: neuroscience and algorithms”",
     "authors": "Chikkerur, S., T. Serre, and T. Poggio",
     "venue": "MIT-CSAIL-TR-2009-047/CBCL-280, Massachusetts Institute of Technology, Cambridge, MA, October 3, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49416/MIT-CSAIL-TR-2009-047.pdf?sequence=1"
   },
   {
-    "title": "\u201cAttentive processing improves object recognition\u201d",
+    "title": "“Attentive processing improves object recognition”",
     "authors": "Chikkerur, S., T. Serre, and T. Poggio",
     "venue": "MIT-CSAIL-TR-2009-046 /CBCL-279, Massachusetts Institute of Technology, Cambridge, MA, October 2, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49415/MIT-CSAIL-TR-2009-046.pdf?sequence=1"
   },
   {
-    "title": "\u201cAn integrated model of visual attention using shape-based features\u201d",
+    "title": "“An integrated model of visual attention using shape-based features”",
     "authors": "Chikkerur, S., C. Tan, T. Serre, and T. Poggio",
     "venue": "MIT-CSAIL-TR-2009-029 / CBCL-278, Massachusetts Institute of Technology, Cambridge, MA, June 20, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/handle/1721.1/45598"
   },
   {
-    "title": "\u201cElastic-Net Regularization in Learning Theory",
+    "title": "“Elastic-Net Regularization in Learning Theory",
     "authors": "De Mol, C., E. De Vito and L. Rosasco",
-    "venue": "\u201c, to be published in the Journal of Complexity, available online January 30, 2009",
+    "venue": "“, to be published in the Journal of Complexity, available online January 30, 2009",
     "year": "2009",
     "link": "https://www.sciencedirect.com/science/article/pii/S0885064X0900003X&_user=501045&_rdoc=1&_fmt=&_orig=search&_sort=d&view=c&_acct=C000022659&_version=1&_urlVersion=0&_userid=501045&md5=47ae8dcca29ed87b3e23ab0468ec420f"
   },
   {
     "title": "Visual Parsing After Recovery From Blindness.",
-    "authors": "Ostrovsky, Y., Meyers, E., Ganesh, S., Mathur, U., Sinha P. \u201d",
-    "venue": "\u201d Psychological Science, 20:1467-1491, 2009",
+    "authors": "Ostrovsky, Y., Meyers, E., Ganesh, S., Mathur, U., Sinha P. ”",
+    "venue": "” Psychological Science, 20:1467-1491, 2009",
     "year": "2009",
     "link": "https://pubmed.ncbi.nlm.nih.gov/19891751/"
   },
   {
     "title": "Iterative Projection Methods for Structured Sparsity Regularization",
-    "authors": "Rosasco, L., S. Mosci, M. Santoro, A. Verri, and S. Villa, \u201c",
-    "venue": "\u201c, MIT-CSAIL-TR-2009-50 / CBCL-282, Massachusetts Institute of Technology, Cambridge, MA, October 14, 2009",
+    "authors": "Rosasco, L., S. Mosci, M. Santoro, A. Verri, and S. Villa, “",
+    "venue": "“, MIT-CSAIL-TR-2009-50 / CBCL-282, Massachusetts Institute of Technology, Cambridge, MA, October 14, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49428/MIT-CSAIL-TR-2009-050.pdf?sequence=1"
   },
   {
-    "title": "\u201cScene Classification with a Biologically Inspired Method\u201d",
+    "title": "“Scene Classification with a Biologically Inspired Method”",
     "authors": "Terashima, Y",
     "venue": "CBCL paper #277/CSAIL Technical Report#2009-020, CBCL-277 Massachusetts Institute of Technology, Cambridge, MA, May 10, 2009",
     "year": "2009",
     "link": "https://dspace.mit.edu/bitstream/handle/1721.1/45516/MIT-CSAIL-TR-2009-020.pdf?sequence=1"
   },
   {
-    "title": "\u201cSufficient Conditions for Uniform Stability of Regularization Algorithms\u201d",
+    "title": "“Sufficient Conditions for Uniform Stability of Regularization Algorithms”",
     "authors": "Wibisono, A., L. Rosasco, T. Poggio",
     "venue": "CBCL paper #284/CSAIL Technical Report#MIT-CSAIL-TR-2009-060, Massachusetts Institute of Technology, Cambridge, MA, December 1, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49868/MIT-CSAIL-TR-2009-060.pdf?sequence=1"
   },
   {
-    "title": "\u201cObject Recognition Using Boosted Oriented Filter Based Local Descriptors.\u201d",
+    "title": "“Object Recognition Using Boosted Oriented Filter Based Local Descriptors.”",
     "authors": "Yokono, J.J., and T.Poggio",
     "venue": "IEEJ Transactions on Electronics, Information and Systems 129 5 (2009): 806-11+5, 2009",
     "year": "2009",
@@ -1513,29 +1555,29 @@
   },
   {
     "title": "Automated home-cage behavioral phenotyping of mice",
-    "authors": "Yu, X., A. Steele, V. Khilnani, E. Garrote, H. Jhuang, T. Serre, and T. Poggio, \u201c",
+    "authors": "Yu, X., A. Steele, V. Khilnani, E. Garrote, H. Jhuang, T. Serre, and T. Poggio, “",
     "venue": "MIT-CSAIL-TR-2009-052 CBCL-283, Massachusetts Institute of Technology, Cambridge, MA, October 26, 2009",
     "year": "2009",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/49527/MIT-CSAIL-TR-2009-052.pdf?sequence=1"
   },
   {
     "title": "Adaptive Kernel Methods Using the Balancing Principle",
-    "authors": "De Vito, E., S. Pereverzyev, and L. Rosasco. \u201c",
-    "venue": "\u201c, CBCL paper #275/CSAIL Technical Report#TR-2008-062Massachusetts Institute of Technology, Cambridge, MA, October 16, 2008",
+    "authors": "De Vito, E., S. Pereverzyev, and L. Rosasco. “",
+    "venue": "“, CBCL paper #275/CSAIL Technical Report#TR-2008-062Massachusetts Institute of Technology, Cambridge, MA, October 16, 2008",
     "year": "2008",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/42896/MIT-CSAIL-TR-2008-062.pdf?sequence=1"
   },
   {
     "title": "Mathematics of the Neural Response",
-    "authors": "S. Smale, L. Rosasco, J. Bouvrie, A. Caponnetto, and T. Poggio. \u201c",
-    "venue": "\u201c, CBCL Paper #276/MIT CSAIL Technical Report #TR2008-070, Massachusetts Institute of Technology, Cambridge, MA, November, 2008",
+    "authors": "S. Smale, L. Rosasco, J. Bouvrie, A. Caponnetto, and T. Poggio. “",
+    "venue": "“, CBCL Paper #276/MIT CSAIL Technical Report #TR2008-070, Massachusetts Institute of Technology, Cambridge, MA, November, 2008",
     "year": "2008",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/43713/MIT-CSAIL-TR-2008-070.pdf"
   },
   {
     "title": "A method for robust variable selection with significance assessments",
-    "authors": "Barla, A., Mosci, S., Rosasco, L. and Verri, A. \u201c",
-    "venue": "\u201d 16th European Symposium on Artificial Neural Networks",
+    "authors": "Barla, A., Mosci, S., Rosasco, L. and Verri, A. “",
+    "venue": "” 16th European Symposium on Artificial Neural Networks",
     "year": "2008",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/rosasco_esann07.pdf"
   },
@@ -1555,8 +1597,8 @@
   },
   {
     "title": "Localized Spectro-Temporal Cepstral Analysis of Speech",
-    "authors": "Bouvrie, J., T. Ezzat, and T. Poggio. \u201c",
-    "venue": "\u201c, IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Las Vegas, 2008",
+    "authors": "Bouvrie, J., T. Ezzat, and T. Poggio. “",
+    "venue": "“, IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Las Vegas, 2008",
     "year": "2008",
     "link": "https://ieeexplore.ieee.org/document/4518714"
   },
@@ -1569,29 +1611,29 @@
   },
   {
     "title": "Elastic-Net Regularization in Learning Theory",
-    "authors": "De Mol, C., E. De Vito and L. Rosasco. \u201c",
-    "venue": "\u201c, CBCL paper #273/ CSAIL Technical Report #TR-2008-046 , Massachusetts Institute of Technology, Cambridge, MA, July 24, 2008",
+    "authors": "De Mol, C., E. De Vito and L. Rosasco. “",
+    "venue": "“, CBCL paper #273/ CSAIL Technical Report #TR-2008-046 , Massachusetts Institute of Technology, Cambridge, MA, July 24, 2008",
     "year": "2008",
     "link": "http://dspace.mit.edu/bitstream/1721.1/41889/1/MIT-CSAIL-TR-2008-046.pdf"
   },
   {
-    "title": "\u201cDiscriminative Word-Spotting Using Ordered Spectro-Temporal Patch Features\u201d",
+    "title": "“Discriminative Word-Spotting Using Ordered Spectro-Temporal Patch Features”",
     "authors": "Ezzat, T. and T. Poggio",
     "venue": "SAPA Workshop, Interspeech, Brisbane, Australia, 2008",
     "year": "2008",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/sapa08.pdf"
   },
   {
-    "title": "\u201cWide and diffuse perceptual modes characterize dyslexics in vision and audition",
+    "title": "“Wide and diffuse perceptual modes characterize dyslexics in vision and audition",
     "authors": "Geiger, G., C. Cattaneo, R. Galli, U. Pozzoli, M. Lorusso, A. Facoetti, and M. Molteni",
-    "venue": "\u201c, Perception Vol. 37, Issue 11, Pages 1745\u00a0\u2013\u00a01764, November 17, 2008",
+    "venue": "“, Perception Vol. 37, Issue 11, Pages 1745 – 1764, November 17, 2008",
     "year": "2008",
     "link": "http://journals.sagepub.com/doi/pdf/10.1068/p6036"
   },
   {
     "title": "A Canonical Neural Circuit for Cortical Nonlinear Operations",
-    "authors": "Kouh, M. and T. Poggio. \u201c",
-    "venue": "\u201d Neural ComputationVol. 20, No. 6, Pages 1427-1451, June 2008",
+    "authors": "Kouh, M. and T. Poggio. “",
+    "venue": "” Neural ComputationVol. 20, No. 6, Pages 1427-1451, June 2008",
     "year": "2008",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/kouh-poggio-NeuroComp-June2008.pdf"
   },
@@ -1603,7 +1645,7 @@
     "link": "http://web.stanford.edu/class/cs379c/archive/2012/suggested_reading_list/documents/LecunetalPintoetalResponse.pdf"
   },
   {
-    "title": "\u201cSpectral Algorithms for Supervised Learning\u201d",
+    "title": "“Spectral Algorithms for Supervised Learning”",
     "authors": "Lo Gerfo L., Rosasco L., Odone F., De Vito E. and Verri, A",
     "venue": "Neural Computation, 20: 1873-1897, 2008",
     "year": "2008",
@@ -1612,19 +1654,19 @@
   {
     "title": "Using Biologically Inspired Visual Features for Face Processing",
     "authors": "Meyers, E., and L. Wolf",
-    "venue": "\u00a0 International Journal of Computer Vision, Vol 76, No. 1, 93-104, 2008",
+    "venue": "  International Journal of Computer Vision, Vol 76, No. 1, 93-104, 2008",
     "year": "2008",
     "link": "https://link.springer.com/article/10.1007/s11263-007-0058-8"
   },
   {
-    "title": "Dynamic Population Coding of Category Information in Inferior Temporal and Prefrontal Cortex\u201d",
-    "authors": "Meyers, E.M., D. J. Freedman, G. Kreiman, E.K. Miller, and T. Poggio. \u201c",
-    "venue": "\u00a0 Journal of Neurophysiology Vol. 100: 1407-1419, June 18, 2008",
+    "title": "Dynamic Population Coding of Category Information in Inferior Temporal and Prefrontal Cortex”",
+    "authors": "Meyers, E.M., D. J. Freedman, G. Kreiman, E.K. Miller, and T. Poggio. “",
+    "venue": "  Journal of Neurophysiology Vol. 100: 1407-1419, June 18, 2008",
     "year": "2008",
     "link": "http://jn.physiology.org/cgi/reprint/100/3/1407"
   },
   {
-    "title": "\u201d Finding Structured Gene Signatures\u201d",
+    "title": "” Finding Structured Gene Signatures”",
     "authors": "Mosci, S.; A. Barla; A. Verri and L. Rosasco",
     "venue": "Proc. of IEEE BIBM, Philadelphia, PA. USA, 2008",
     "year": "2008",
@@ -1632,15 +1674,15 @@
   },
   {
     "title": "A Note on Perturbation Results for Learning Empirical Operators",
-    "authors": "Rosasco, L., M. Belkin, and E. De Vito. \u201c",
-    "venue": "\u201c, CBCL paper #274/ CSAIL Technical Report #TR-2008-052 , Massachusetts Institute of Technology, Cambridge, MA, August 19, 2008",
+    "authors": "Rosasco, L., M. Belkin, and E. De Vito. “",
+    "venue": "“, CBCL paper #274/ CSAIL Technical Report #TR-2008-052 , Massachusetts Institute of Technology, Cambridge, MA, August 19, 2008",
     "year": "2008",
     "link": "http://dspace.mit.edu/bitstream/handle/1721.1/41940/MIT-CSAIL-TR-2008-052.pdf?sequence=1"
   },
   {
-    "title": "\u201cImage representations beyond histograms of gradients: The role of Gestalt descriptors\u201d",
+    "title": "“Image representations beyond histograms of gradients: The role of Gestalt descriptors”",
     "authors": "Bileschi, S. Wolf, L",
-    "venue": "Proc. of IEEE Conference on Computer Vision and Pattern Recognition, 2007 \u2013 CVPR \u201907, June 2007, Pages 1-8, Digital Object Identifier 10.1109/CVPR.2007.383122",
+    "venue": "Proc. of IEEE Conference on Computer Vision and Pattern Recognition, 2007 – CVPR ’07, June 2007, Pages 1-8, Digital Object Identifier 10.1109/CVPR.2007.383122",
     "year": "2007",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/bileschi-wolf_gestalt.pdf"
   },
@@ -1694,7 +1736,7 @@
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/MIT-CSAIL-TR-2007-060.pdf"
   },
   {
-    "title": ". \u201cMemories of a friend of Odile\u201d in Odile Crick: A Memorial Exhibition",
+    "title": ". “Memories of a friend of Odile” in Odile Crick: A Memorial Exhibition",
     "authors": "Poggio, T",
     "venue": "curator Becky Cohen, The Salk Institute, 2004",
     "year": "2007",
@@ -1766,7 +1808,7 @@
   {
     "title": ". Trade-off between object selectivity and tolerance in monkey inferotemporal cortex",
     "authors": "Zoccolan, D., M. Kouh, T. Poggio, and James J. DiCarlo",
-    "venue": "Journal of Neuroscience, Volume 27(45), pp.12292\u201312307, November, 2007",
+    "venue": "Journal of Neuroscience, Volume 27(45), pp.12292–12307, November, 2007",
     "year": "2007",
     "link": "https://poggio-lab.mit.edu/wp-content/uploads/2016/08/zoccolan-Jneuroscience-11-07.pdf"
   },
@@ -1981,9 +2023,9 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/2005/AIM-2005-028.pdf"
   },
   {
-    "title": "\u201cA Learning Market-Maker in the Glosten-Milgrom Model\u201d",
+    "title": "“A Learning Market-Maker in the Glosten-Milgrom Model”",
     "authors": "Das, S",
-    "venue": "\u00a0Quantitative Finance, Vol. 5, No. 2, 169-180, April 2005",
+    "venue": " Quantitative Finance, Vol. 5, No. 2, 169-180, April 2005",
     "year": "2005",
     "link": "https://pdfs.semanticscholar.org/768d/c8c25f7b621e06648b458e51cbaa0a8ee8c6.pdf"
   },
@@ -2303,14 +2345,14 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/theses/thesis-masters-paysan.pdf"
   },
   {
-    "title": "\u201cFrancis H. C. Crick: Memories of a friend of Francis and Odile\u201d",
+    "title": "“Francis H. C. Crick: Memories of a friend of Francis and Odile”",
     "authors": "Poggio, T",
     "venue": "in the Crick Memorial Book: A Memorial Exhibition, curator Becky Cohen, The Salk Institute, 2004",
     "year": "2004",
     "link": "http://cbcl.mit.edu/publications/ps/FrancisMemorial-poggio.pdf"
   },
   {
-    "title": "Q & A \u2013 Discussion",
+    "title": "Q & A – Discussion",
     "authors": "Poggio, T",
     "venue": "Current Biology, Vol. 14, Issue 23, R985-R986, December 2004",
     "year": "2004",
@@ -2366,7 +2408,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/rifkin-04-jmlr.pdf"
   },
   {
-    "title": "\u201cObject Recognition and Random Image Structure Evolution,\u201d",
+    "title": "“Object Recognition and Random Image Structure Evolution,”",
     "authors": "Sadr, J. and P. Sinha",
     "venue": "Cognitive Science, Vol. 28, 259-287, 2004",
     "year": "2004",
@@ -2536,7 +2578,7 @@
   {
     "title": "Visual Object Recognition with Supervised Learning",
     "authors": "Heisele, B",
-    "venue": "IEEE Intelligent Systems \u2013 AI\u2019s Second Century, 38-42, May-June 2003",
+    "venue": "IEEE Intelligent Systems – AI’s Second Century, 38-42, May-June 2003",
     "year": "2003",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/heisele-x3hei.lo.pdf"
   },
@@ -2660,7 +2702,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/theses/thesis-rosen.pdf"
   },
   {
-    "title": "\u201cThe Role of Eyebrows in Face Recognition,\u201d",
+    "title": "“The Role of Eyebrows in Face Recognition,”",
     "authors": "Sadr, J., I. Jarudi and P. Sinha",
     "venue": "Perception, 32, 285-293, 2003",
     "year": "2003",
@@ -2842,7 +2884,7 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/2002/AIM-2002-003.pdf"
   },
   {
-    "title": "\u201cEnhanced Perceptual Sensitivity for Anger among Physically Abused Children,\u201d",
+    "title": "“Enhanced Perceptual Sensitivity for Anger among Physically Abused Children,”",
     "authors": "Pollak, S. and P. Sinha",
     "venue": "Developmental Psychology, Vol. 38, No. 5, 784-791, 2002",
     "year": "2002",
@@ -2858,7 +2900,7 @@
   {
     "title": "Extra-label Information: Experiments with View-based Classification",
     "authors": "Rakhlin, A., G. Yeo and T. Poggio",
-    "venue": "In: Proceedings of the Sixth International Conference on Knowledge-Based Intelligent Information & Engineering Systems (KES\u20192002), Podere d\u2019Ombriano, Crema, Italy, September 16-18, 2002",
+    "venue": "In: Proceedings of the Sixth International Conference on Knowledge-Based Intelligent Information & Engineering Systems (KES’2002), Podere d’Ombriano, Crema, Italy, September 16-18, 2002",
     "year": "2002",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/rakhlin-view-based-conf.pdf"
   },
@@ -2891,9 +2933,9 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/bmcv-serre.pdf"
   },
   {
-    "title": "\u201cIdentifying Perceptually Significant Features for Recognizing Faces.\u201d",
+    "title": "“Identifying Perceptually Significant Features for Recognizing Faces.”",
     "authors": "Sinha, P",
-    "venue": "In: Proceedings of the SPIE Electronic Imaging 2002 Symposium \u2013 Electronic Imaging Systems and Image Processing Methods, Human Vision and Electronics Imaging VII, January 21-24, 2002",
+    "venue": "In: Proceedings of the SPIE Electronic Imaging 2002 Symposium – Electronic Imaging Systems and Image Processing Methods, Human Vision and Electronics Imaging VII, January 21-24, 2002",
     "year": "2002",
     "link": "http://web.mit.edu/sinhalab/Papers/sinha_SPIE02.pdf"
   },
@@ -2926,14 +2968,14 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/pervasive-2002.pdf"
   },
   {
-    "title": "\u201cRole of Color in Face Recognition,\u201d",
+    "title": "“Role of Color in Face Recognition,”",
     "authors": "Yip, A. and P. Sinha",
     "venue": "Perception, Vol. 31, 995-1003, 2002",
     "year": "2002",
     "link": "http://web.mit.edu/sinhalab/Papers/yip_sinha_ColorFaces.pdf"
   },
   {
-    "title": "\u201cBiophysiologically Plausible Implementations of the Maximum Operation,\u201d",
+    "title": "“Biophysiologically Plausible Implementations of the Maximum Operation,”",
     "authors": "Yu, A.J., M.A. Giese and T. Poggio",
     "venue": "Neural Computation, Vol. 14, No. 12, 2857-2881, 2002",
     "year": "2002",
@@ -2991,7 +3033,7 @@
   {
     "title": "Choosing Multiple Parameters for Support Vector Machines",
     "authors": "Chapelle, O., V. Vapnik, O. Bousquet and S. Mukherjee",
-    "venue": "Machine Learning \u2013 Special Issue on Support Vector Machines, 2001",
+    "venue": "Machine Learning – Special Issue on Support Vector Machines, 2001",
     "year": "2001",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/optimal.ps"
   },
@@ -3012,7 +3054,7 @@
   {
     "title": "Face Recognition with Support Vector Machines: Global Versus Component-based Approach",
     "authors": "Heisele, B., P. Ho and T. Poggio",
-    "venue": "International Conference on Computer Vision (ICCV\u201901), Vancouver, Canada, Vol. 2, 688-694, 2001",
+    "venue": "International Conference on Computer Vision (ICCV’01), Vancouver, Canada, Vol. 2, 688-694, 2001",
     "year": "2001",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/iccv2001.pdf"
   },
@@ -3087,7 +3129,7 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/2001/AIM-2001-026.ps"
   },
   {
-    "title": "Generalization Over Contrast and Mirror Reversal, but Not Figure-ground Reversal, in an \u201cEdge-based\u201d Model of IT Neurons",
+    "title": "Generalization Over Contrast and Mirror Reversal, but Not Figure-ground Reversal, in an “Edge-based” Model of IT Neurons",
     "authors": "Riesenhuber, M",
     "venue": "CBCL Paper #211/AI Memo #2001-034, Massachusetts Institute of Technology, Cambridge, MA, December 2001",
     "year": "2001",
@@ -3164,7 +3206,7 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/2001/AIM-2001-015.ps"
   },
   {
-    "title": "\u201cFunctional Neuroanatomy of Biological Motion Perception in Humans.\u201d",
+    "title": "“Functional Neuroanatomy of Biological Motion Perception in Humans.”",
     "authors": "Vaina, L.M., J. Solomon, S. Chowdry, P. Sinha, J.W. Belliveau, and C.G. Gross",
     "venue": "In: Proceedings of the National Academy of Sciences, 98, 11656-11661, 2001",
     "year": "2001",
@@ -3180,7 +3222,7 @@
   {
     "title": "Molecular Classification of Multiple Tumor Types",
     "authors": "Yeang, C.-H., S. Ramaswamy, P. Tamayo, S. Mukherjee, R.M. Rifkin, M. Angelo, M. Reich, E. Lander, J. Mesirov, and T. Golub",
-    "venue": "In: Intelligent Systems in Molecular Biology \u2013 Bioinformatics Discovery Note, Proceedings of the Ninth International Conference on Intelligent Systems in Molecular Biology, Copenhagen, Denmark, (July 21-25, 2001), Vol. 1, No. 1, S316-S322, 2001",
+    "venue": "In: Intelligent Systems in Molecular Biology – Bioinformatics Discovery Note, Proceedings of the Ninth International Conference on Intelligent Systems in Molecular Biology, Copenhagen, Denmark, (July 21-25, 2001), Vol. 1, No. 1, S316-S322, 2001",
     "year": "2001",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/cancerismb2001.pdf"
   },
@@ -3311,14 +3353,14 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/papageorgiou-poggio-IJCV-2000.pdf"
   },
   {
-    "title": "\u201cSecond Wave of Network Technologies,\u201d",
+    "title": "“Second Wave of Network Technologies,”",
     "authors": "Poggio, T",
     "venue": "The Future of Software, 1, 1, 84-85, Winter 2000/2001",
     "year": "2000",
     "link": "http://cbcl.mit.edu/people/poggio/journals/poggio-FutureSoftware-2001.pdf"
   },
   {
-    "title": "\u201cLearning in Brains and Machines,\u201d",
+    "title": "“Learning in Brains and Machines,”",
     "authors": "Poggio, T. and C. Shelton",
     "venue": "Spatial Vision, Vol. 13, No. 2-3, 287-296, 2000",
     "year": "2000",
@@ -3346,7 +3388,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/AIM-1695.pdf"
   },
   {
-    "title": "\u201cCBF: A New Framework for Object Categorization in Cortex.\u201d",
+    "title": "“CBF: A New Framework for Object Categorization in Cortex.”",
     "authors": "Riesenhuber, M. and T. Poggio",
     "venue": "In: Biologically Motivated Computer Vision, Lee, S-W., H.H. Buelthoff and T. Poggio (eds.), First IEEE International Workshop, BMCV 2000, Seoul, Korea, May 2000",
     "year": "2000",
@@ -3374,7 +3416,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/shelton-IJCV-2000.pdf"
   },
   {
-    "title": "\u201cThe Perception of Gaze Direction,\u201d",
+    "title": "“The Perception of Gaze Direction,”",
     "authors": "Sinha, P",
     "venue": "Perception, 2000 (to appear)",
     "year": "2000",
@@ -3409,7 +3451,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/reviewall-memoreview.ps"
   },
   {
-    "title": "\u201cQuick Work but Variable Quality,\u201d",
+    "title": "“Quick Work but Variable Quality,”",
     "authors": "Giese, M.A",
     "venue": "Nature, 401, 13, 1999",
     "year": "1999",
@@ -3437,14 +3479,14 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/cvpr99.ps"
   },
   {
-    "title": "\u201cVariational Probabilistic Inference and the QMR-DT Network,\u201d",
+    "title": "“Variational Probabilistic Inference and the QMR-DT Network,”",
     "authors": "Jaakkola, T. and M.I. Jordan",
     "venue": "Journal of Artificial Intelligence Research, 10, 291-322, 1999",
     "year": "1999",
     "link": "https://people.csail.mit.edu/tommi/papers/jaakkola99a.pdf"
   },
   {
-    "title": "\u201cVariational Methods and the QMR-DT Database.\u201d",
+    "title": "“Variational Methods and the QMR-DT Database.”",
     "authors": "Jaakkola, T., and M.I. Jordan",
     "venue": "In: Neural Networks and Machine Learning, C. M. Bishop (Ed.), Berlin: Springer-Verlag, 1999",
     "year": "1999",
@@ -3458,21 +3500,21 @@
     "link": "https://mitpress.mit.edu/books/learning-graphical-models"
   },
   {
-    "title": "\u201cComputational Motor Control.\u201d",
+    "title": "“Computational Motor Control.”",
     "authors": "Jordan, M. I., and D. M. Wolpert",
     "venue": "In: The Cognitive Neurosciences, 2nd edition, M. Gazzaniga (Ed.), Cambridge, MA, MIT Press, 1999",
     "year": "1999",
     "link": "http://mlg.eng.cam.ac.uk/zoubin/papers/gazzaniga.pdf"
   },
   {
-    "title": "\u201cAn Introduction to Variational Methods for Graphical Models,\u201d",
+    "title": "“An Introduction to Variational Methods for Graphical Models,”",
     "authors": "Jordan, M. I., Z. Ghahramani, T.S. Jaakkola and L.K. Saul",
     "venue": "Machine Learning, in press",
     "year": "1999",
     "link": "https://people.eecs.berkeley.edu/~jordan/papers/variational-intro.pdf"
   },
   {
-    "title": "\u201cPredicting the Visual World: Silence is Golden,\u201d",
+    "title": "“Predicting the Visual World: Silence is Golden,”",
     "authors": "Koch, C. and T. Poggio",
     "venue": "Nature Neuroscience, Vol. 2, No. 1, 9-10, January 1999",
     "year": "1999",
@@ -3486,7 +3528,7 @@
     "link": "ftp://publications.ai.mit.edu/ai-publications/pdf/AIM-1672.pdf"
   },
   {
-    "title": "\u201cOutput Units of Motor Behavior: An Experimental and Modeling Study,\u201d",
+    "title": "“Output Units of Motor Behavior: An Experimental and Modeling Study,”",
     "authors": "Loeb, E., S. Giszter, P. Saltiel, F.A. Mussa-Ivaldi and E. Bizzi",
     "venue": "J. Cognitive Neuroscience, 1999, in press",
     "year": "1999",
@@ -3537,14 +3579,14 @@
   {
     "title": "Trainable Pedestrian Detection",
     "authors": "Papageorgiou, C. and T. Poggio",
-    "venue": "International Conference on Image Processing (ICIP\u201999), Kobe, Japan, October 1999",
+    "venue": "International Conference on Image Processing (ICIP’99), Kobe, Japan, October 1999",
     "year": "1999",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/icip99.published.ps.gz"
   },
   {
     "title": "A Pattern Classification Approach to Dynamical Object Detection",
     "authors": "Papageorgiou, C. and T. Poggio",
-    "venue": "In: Proceedings of International Conference on Computer Vision (ICCV\u201999), Corfu, Greece, 1223-1228, September 1999",
+    "venue": "In: Proceedings of International Conference on Computer Vision (ICCV’99), Corfu, Greece, 1223-1228, September 1999",
     "year": "1999",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/dyn-obj-iccv99.ps.gz"
   },
@@ -3556,7 +3598,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/correlation-icassp99.ps.gz"
   },
   {
-    "title": "\u201cImparare a Vedere.\u201d",
+    "title": "“Imparare a Vedere.”",
     "authors": "Poggio, T",
     "venue": "In: Enciclopedia Italiana Treccani, III, 675-685, 1999",
     "year": "1999",
@@ -3591,7 +3633,7 @@
     "link": "http://cbcl.mit.edu/publications/ps/nn99.pdf"
   },
   {
-    "title": "Are Cortical Models Really Bound by the \u2018Binding Problem\u2019?",
+    "title": "Are Cortical Models Really Bound by the ‘Binding Problem’?",
     "authors": "Riesenhuber, M. and T. Poggio",
     "venue": "Neuron 24, 87-93, 1999",
     "year": "1999",
@@ -3605,14 +3647,14 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/1500-1999/AIM-1661.ps"
   },
   {
-    "title": "\u201cMixed Memory Markov Models: Decomposing Complex Stochastic Processes as Mixture of Simpler Ones,\u201d",
+    "title": "“Mixed Memory Markov Models: Decomposing Complex Stochastic Processes as Mixture of Simpler Ones,”",
     "authors": "Saul, L. K., and M.I. Jordan",
     "venue": "Machine Learning, in press",
     "year": "1999",
     "link": "https://cseweb.ucsd.edu/~saul/papers/mixmem_ml99.pdf"
   },
   {
-    "title": "\u201cThe Construction of Movement by the Spinal Cord,\u201d",
+    "title": "“The Construction of Movement by the Spinal Cord,”",
     "authors": "Tresch, M.C., P. Saltiel and E. Bizzi",
     "venue": "Nature Neuroscience, 2:162-167, 1999",
     "year": "1999",
@@ -3626,9 +3668,9 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/1500-1999/AIM-1651.ps"
   },
   {
-    "title": "\u201cModular Organization of Motor Behavior,\u201d",
+    "title": "“Modular Organization of Motor Behavior,”",
     "authors": "Bizzi, E., P. Saltiel and M.C. Tresch",
-    "venue": "Zeitschrift f\u00fcr Naturforschung, 53c: 510-517, 1998",
+    "venue": "Zeitschrift für Naturforschung, 53c: 510-517, 1998",
     "year": "1998",
     "link": "https://www.semanticscholar.org/paper/Modular-organization-of-motor-behavior--Bizzi-Saltiel/66ab1c6c6d8baaa989e12ca543a98cadfb7f4f0b"
   },
@@ -3647,8 +3689,8 @@
     "link": "http://cbcl.mit.edu/people/poggio/journals/chellappa-poggio-IEEE-1998.pdf"
   },
   {
-    "title": "\u201cLow Dimensionality of Supraspinally Induced Force Fields,\u201d",
-    "authors": "D\u2019Avella, A. and E. Bizzi",
+    "title": "“Low Dimensionality of Supraspinally Induced Force Fields,”",
+    "authors": "D’Avella, A. and E. Bizzi",
     "venue": "Proc. of the National Academy of Science, 95: 7711-7714, 1998",
     "year": "1998",
     "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC22732/"
@@ -3668,14 +3710,14 @@
     "link": "http://www.ai.mit.edu/people/cshelton/papers/rapid2.ps.gz"
   },
   {
-    "title": "\u201cDynamic Neural Field Model Links Neural and Computational Theories of Motion Perception.\u201d",
+    "title": "“Dynamic Neural Field Model Links Neural and Computational Theories of Motion Perception.”",
     "authors": "Giese, M.A",
     "venue": "In: Workshop Dynamische Perzeption, Infix Verlag, H. Ritter and S. Posch (eds.), St. Augustin, Germany, 1998",
     "year": "1998",
     "link": "http://getwww.uni-paderborn.de/misc/fg-bildverstehen/history/ws_dyn_perc98Dt.html"
   },
   {
-    "title": "\u201cA Perturbation Scheme for Spherical Arrangements with Application to Molecular Modeling,\u201d",
+    "title": "“A Perturbation Scheme for Spherical Arrangements with Application to Molecular Modeling,”",
     "authors": "Halperin, D. and Shelton, C.R",
     "venue": "Computational Geometry: Theory and Applications, Vol. 10, No. 4, 273-288, 1998",
     "year": "1998",
@@ -3689,14 +3731,14 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/1500-1999/AIM-1625.ps"
   },
   {
-    "title": "\u201cAdaptation in Speech Production,\u201d",
+    "title": "“Adaptation in Speech Production,”",
     "authors": "Houde, J. and M.I. Jordan",
     "venue": "Science, 279, 1213-1216, 1998",
     "year": "1998",
     "link": "https://www.ncbi.nlm.nih.gov/pubmed/9469813"
   },
   {
-    "title": "\u201cAdaptation in Speech Motor Control.\u201d",
+    "title": "“Adaptation in Speech Motor Control.”",
     "authors": "Houde, J. and M.I. Jordan",
     "venue": "In: Advances in Neural Information Processing Systems 10, Jordan, M. I., Kearns, M. J. and Solla, S. A. (Eds.), Cambridge MA: MIT Press, 1998",
     "year": "1998",
@@ -3724,7 +3766,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/mmm.ps"
   },
   {
-    "title": "\u201cAn Introduction to Variational Methods for Graphical Models.\u201d",
+    "title": "“An Introduction to Variational Methods for Graphical Models.”",
     "authors": "Jordan, M. I., Z. Ghahramani, T.S. Jaakkola and L.K. Saul",
     "venue": "In: Learning in Graphical Models, M. I. Jordan (Ed.), Cambridge, MIT Press, 1998",
     "year": "1998",
@@ -3745,8 +3787,8 @@
     "link": "http://cbcl.mit.edu/publications/ps/niyogi_poggio_girosi_1998.pdf"
   },
   {
-    "title": "\u201cSex Classification is Better with Three-Dimensional Head Structure than with Texture,\u201d",
-    "authors": "O\u2019Toole, A.J., T. Vetter, N.F. Toje and H.H. B\u00fclthoff",
+    "title": "“Sex Classification is Better with Three-Dimensional Head Structure than with Texture,”",
+    "authors": "O’Toole, A.J., T. Vetter, N.F. Toje and H.H. Bülthoff",
     "venue": "Perception, in press",
     "year": "1998",
     "link": "http://gravis.dmi.unibas.ch/perception.html"
@@ -3768,7 +3810,7 @@
   {
     "title": "A General Framework for Object Detection",
     "authors": "Papageorgiou, C., M. Oren, and T. Poggio",
-    "venue": "In: Proceedings of the Sixth International Conference on Computer Vision (ICCV\u201998), Bombay, India, 555-562, January 1998",
+    "venue": "In: Proceedings of the Sixth International Conference on Computer Vision (ICCV’98), Bombay, India, 555-562, January 1998",
     "year": "1998",
     "link": "http://turing.iimas.unam.mx/~elena/CompVis/Papageogiou98.pdf"
   },
@@ -3829,21 +3871,21 @@
     "link": "http://rocs.hu-berlin.de/papers/riesenhuber_1998.pdf"
   },
   {
-    "title": "\u201cThe Role Inertial Sensitivity in Motor Planning.\u201d",
+    "title": "“The Role Inertial Sensitivity in Motor Planning.”",
     "authors": "Sabes, P., M.I. Jordan and D.M. Wolpert",
     "venue": "Journal of Neuroscience, 18, 5948-5959, 1998",
     "year": "1998",
     "link": "http://www.jneurosci.org/content/18/15/5948"
   },
   {
-    "title": "\u201cSpinal Cord Modular Organization and Rhythm Generation: An NMDA Iontophoretic Study in the Frog,\u201d",
+    "title": "“Spinal Cord Modular Organization and Rhythm Generation: An NMDA Iontophoretic Study in the Frog,”",
     "authors": "Saltiel, P., M.C. Tresch and E. Bizzi",
     "venue": "J. Neurophysiol., 80: 2323-2339, 1998",
     "year": "1998",
     "link": "http://jn.physiology.org/content/80/5/2323.long"
   },
   {
-    "title": "\u201cA Mean field Learning Algorithm for Unsupervised Neural Networks.\u201d",
+    "title": "“A Mean field Learning Algorithm for Unsupervised Neural Networks.”",
     "authors": "Saul, L. K., and M. Jordan",
     "venue": "In: Learning in Graphical Models, M. I. Jordan (Ed.), Cambridge: MIT Press, 1998",
     "year": "1998",
@@ -3857,21 +3899,21 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/1500-1999/AITR-1650.ps"
   },
   {
-    "title": "\u201cExample-Based Learning for View-Based Human Face Detection,\u201d",
+    "title": "“Example-Based Learning for View-Based Human Face Detection,”",
     "authors": "Sung, K.K. and T. Poggio",
     "venue": "IEEE PAMI, Vol. 20, No. 1, 39-51, 1998",
     "year": "1998",
     "link": "http://www.vision.caltech.edu/CNS179/papers/Poggio98.pdf"
   },
   {
-    "title": "\u201cSmoothness Maximization along a Predefined Path Accurately Predicts the Speed Profiles of Complex Arm Movements,\u201d",
+    "title": "“Smoothness Maximization along a Predefined Path Accurately Predicts the Speed Profiles of Complex Arm Movements,”",
     "authors": "Todorov, E. and M. Jordan",
     "venue": "Journal of Neurophysiology, 80, 696-714, 1998",
     "year": "1998",
     "link": "https://homes.cs.washington.edu/~todorov/papers/TodorovJNeurophys98.pdf"
   },
   {
-    "title": "Vetter, T. \u201cSynthesis of Novel Views from a Single Face Image,\u201d",
+    "title": "Vetter, T. “Synthesis of Novel Views from a Single Face Image,”",
     "authors": "",
     "venue": "International Journal of Computer Vision, Vol. 28, No. 2, 103-116, 1998",
     "year": "1998",
@@ -3885,7 +3927,7 @@
     "link": "http://cbcl.mit.edu/publications/ai-publications/1500-1999/AIM-1624.ps"
   },
   {
-    "title": "\u201cVLSI Hardware for Example-based Learning.\u201d",
+    "title": "“VLSI Hardware for Example-based Learning.”",
     "authors": "Yang, W. and A. Lipman",
     "venue": "In: Proceedings of 1998 Image Understanding Workshop, November 1998",
     "year": "1998",
@@ -3992,7 +4034,7 @@
   {
     "title": "Nonlinear Prediction of Chaotic Time Series using a Support Vector Machine",
     "authors": "Mukherjee, S., E. Osuna, and F. Girosi",
-    "venue": "In: IEEE Neural Network for Signal Processing (NNSP\u201997), Amelia Island, FL, September 1997",
+    "venue": "In: IEEE Neural Network for Signal Processing (NNSP’97), Amelia Island, FL, September 1997",
     "year": "1997",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/nnsp97.ps.gz"
   },
@@ -4006,21 +4048,21 @@
   {
     "title": "Pedestrian Detection Using Wavelet Templates",
     "authors": "Oren, M., C. Papageorgiou, P. Sinha, E. Osuna and T. Poggio",
-    "venue": "In: Proceedings of the 1997 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR\u201997), Puerto Rico, 193-199, June 1997",
+    "venue": "In: Proceedings of the 1997 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR’97), Puerto Rico, 193-199, June 1997",
     "year": "1997",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/pedwav-temp-cvpr97.ps.gz"
   },
   {
     "title": "Improved Training Algorithm for Support Vector Machines",
     "authors": "Osuna, E., R. Freund, and F. Girosi",
-    "venue": "In: IEEE Neural Network for Signal Processing (NNSP\u201997), Amelia Island, FL, September 1997",
+    "venue": "In: IEEE Neural Network for Signal Processing (NNSP’97), Amelia Island, FL, September 1997",
     "year": "1997",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/nnsp97-svm.ps"
   },
   {
     "title": "Training Support Vector Machines: An Application to Face Detection",
     "authors": "Osuna, E., R. Freund and F. Girosi",
-    "venue": "In: Proceedings of the 1997 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR\u201997), Puerto Rico, 130-136, June 1997",
+    "venue": "In: Proceedings of the 1997 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR’97), Puerto Rico, 130-136, June 1997",
     "year": "1997",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/cvpr97-face.ps.gz"
   },
@@ -4046,7 +4088,7 @@
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/myHire.ps.gz"
   },
   {
-    "title": "On-center and Off-center Cell Competition Generates Oriented Receptive Fields from Non-oriented Stimuli in Kohonen\u2019s Self-organizing Map",
+    "title": "On-center and Off-center Cell Competition Generates Oriented Receptive Fields from Non-oriented Stimuli in Kohonen’s Self-organizing Map",
     "authors": "Riesenhuber, M., H.U. Bauer and T. Geisel",
     "venue": "In: Computation in Neural Systems (CNS*96), Plenum, 471-476, 1997",
     "year": "1997",
@@ -4181,7 +4223,7 @@
   {
     "title": "Analyzing the Formation of Structure in High-dimensional Self-organizing Maps Reveals Differences to Feature Map Models",
     "authors": "Riesenhuber, M., H.U. Bauer and T. Geisel",
-    "venue": "In: Artificial Neural Networks \u2013 ICANN\u201996, Vol. 1112 of Lecture Notes in Computer Science, Springer, 409-411, 1996",
+    "venue": "In: Artificial Neural Networks – ICANN’96, Vol. 1112 of Lecture Notes in Computer Science, Springer, 409-411, 1996",
     "year": "1996",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/icann96.ps.gz"
   },
@@ -4293,7 +4335,7 @@
   {
     "title": "Beyond Feature Map Models: Analyzing the Emergence of Ocular Dominance and Orientation Columns in High-dimensional Self-organizing Maps",
     "authors": "Riesenhuber, M., H.U. Bauer and T. Geisel",
-    "venue": "In: Learning and Memory: Proceedings of the 23rd G\u00f6ttingen Neurobiology Conference 1995, Georg Thieme Verlang, Stuttgart, Vol. 1, 1995",
+    "venue": "In: Learning and Memory: Proceedings of the 23rd Göttingen Neurobiology Conference 1995, Georg Thieme Verlang, Stuttgart, Vol. 1, 1995",
     "year": "1995",
     "link": "http://cbcl.mit.edu/projects/cbcl/publications/ps/goett95.ps.gz"
   },
@@ -4676,7 +4718,7 @@
     "link": "http://cbcl.mit.edu/people/poggio/journals/koch-poggio-PNAS-1983.pdf"
   },
   {
-    "title": "Figure-ground Discrimination by Relative Movement in the Visual System of the Fly \u2013 II: Towards the Neural Circuitry",
+    "title": "Figure-ground Discrimination by Relative Movement in the Visual System of the Fly – II: Towards the Neural Circuitry",
     "authors": "Reichardt, W., T. Poggio and K. Hausen",
     "venue": "Biological Cybernetics, 46, 1-30, 1983",
     "year": "1983",
@@ -4713,14 +4755,14 @@
   {
     "title": "B\\FClthoff, H.",
     "authors": "",
-    "venue": "\u00a0T. Poggio, and\u00a0C. Wehrhahn.\u00a0\u201c3D Analysis of the Flight Trajectories of Flies (Drosophilia Melanogaster)\u00a0.\u201d\u00a0Z. Naturforsch\u00a035c (1980).\u00a0Google Scholar",
+    "venue": " T. Poggio, and C. Wehrhahn. “3D Analysis of the Flight Trajectories of Flies (Drosophilia Melanogaster) .” Z. Naturforsch 35c (1980). Google Scholar",
     "year": "1982",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=82"
   },
   {
     "title": "Crick, F. H. C.",
     "authors": "",
-    "venue": "\u00a0D. C. Marr, and\u00a0T. Poggio.\u00a0\u201cAn Information Processing Approach to Understanding the Visual Cortex.\u201d\u00a0A.I. Memo\u00a0No. 557 (1980).\u00a0Google Scholar",
+    "venue": " D. C. Marr, and T. Poggio. “An Information Processing Approach to Understanding the Visual Cortex.” A.I. Memo No. 557 (1980). Google Scholar",
     "year": "1982",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=80"
   },
@@ -4762,70 +4804,70 @@
   {
     "title": "Reichrdt, W.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cFigure-Ground Discrimination by Relative Movement in the Visual System of the Fly.\u201d\u00a0Biological Cybernetics\u00a035 (1979).\u00a0Google Scholar",
+    "venue": "and T. Poggio. “Figure-Ground Discrimination by Relative Movement in the Visual System of the Fly.” Biological Cybernetics 35 (1979). Google Scholar",
     "year": "1979",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=77"
   },
   {
     "title": "Marr, D.",
     "authors": "",
-    "venue": "\u00a0G. Palm, and\u00a0T. Poggio.\u00a0\u201cAnalysis of a Cooperative Stereo Algorithm.\u201d\u00a0Biological Cybernetics\u00a028, no. 4 (1978).\u00a0Google Scholar",
+    "venue": " G. Palm, and T. Poggio. “Analysis of a Cooperative Stereo Algorithm.” Biological Cybernetics 28, no. 4 (1978). Google Scholar",
     "year": "1978",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=73"
   },
   {
     "title": "Palm, G.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cThe Volterra Representation and the Wiener Expansion: Validity and Pitfalls.\u201d\u00a0SIAM Journal of Applied Mathematics\u00a033 (1977).Google Scholar",
+    "venue": "and T. Poggio. “The Volterra Representation and the Wiener Expansion: Validity and Pitfalls.” SIAM Journal of Applied Mathematics 33 (1977).Google Scholar",
     "year": "1977",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=76"
   },
   {
     "title": "Torre, V.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cA Volterra Representation of Some Neuron Models.\u201d\u00a0Biological Cybernetics\u00a027, no. 2 (1977).\u00a0Google Scholar",
+    "venue": "and T. Poggio. “A Volterra Representation of Some Neuron Models.” Biological Cybernetics 27, no. 2 (1977). Google Scholar",
     "year": "1977",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=75"
   },
   {
     "title": "Geiger, G.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cThe Orientation of Flies Towards Visual Patterns: On the Search for the Underlying Functional Interactions.\u201d\u00a0Biological Cybernetics\u00a019 (1975).\u00a0Google Scholar",
+    "venue": "and T. Poggio. “The Orientation of Flies Towards Visual Patterns: On the Search for the Underlying Functional Interactions.” Biological Cybernetics 19 (1975). Google Scholar",
     "year": "1975",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=69"
   },
   {
     "title": "Reichardt, W.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cA Theory of the Pattern Induced Flight Orientation of the Fly Musca Domestica II.\u201d\u00a094 Biological Cybernetics\u00a018 (1975).\u00a0Google Scholar",
+    "venue": "and T. Poggio. “A Theory of the Pattern Induced Flight Orientation of the Fly Musca Domestica II.” 94 Biological Cybernetics 18 (1975). Google Scholar",
     "year": "1975",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=68"
   },
   {
     "title": "Poggio, T.",
     "authors": "",
-    "venue": "\u00a0\u201cOn Holographic Models of Memory.\u201d\u00a0Kybernetik\u00a012, no. 4 (1973).\u00a0Google Scholar",
+    "venue": " “On Holographic Models of Memory.” Kybernetik 12, no. 4 (1973). Google Scholar",
     "year": "1973",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=10"
   },
   {
     "title": "Borsellino, A.",
     "authors": "",
-    "venue": "and\u00a0T. Poggio.\u00a0\u201cConvolution and Correlation Algebras.\u201d\u00a0Kybernetik\u00a013, no. 2 (1973).Google Scholar",
+    "venue": "and T. Poggio. “Convolution and Correlation Algebras.” Kybernetik 13, no. 2 (1973).Google Scholar",
     "year": "1973",
     "link": "https://poggio-lab.mit.edu/biblio?f[author]=67"
   },
   {
     "title": "Considerations on Models of Movement Detection",
-    "authors": "\u201c",
-    "venue": "\u201d\u00a0Kybernetik\u00a013, no. 4 (1973).\u00a0Google Scholar",
+    "authors": "“",
+    "venue": "” Kybernetik 13, no. 4 (1973). Google Scholar",
     "year": "1973",
     "link": "https://poggio-lab.mit.edu/publications/"
   },
   {
     "title": "A Theory of the Pattern Induced Flight Orientation of the Fly Musca Domestica",
-    "authors": "Poggio, T., and\u00a0W Reichardt.\u00a0\u201c",
-    "venue": "\u201d\u00a0Kybernetik\u00a010, no. 1 (1972).\u00a0Google Scholar",
+    "authors": "Poggio, T., and W Reichardt. “",
+    "venue": "” Kybernetik 10, no. 1 (1972). Google Scholar",
     "year": "1972",
     "link": "https://poggio-lab.mit.edu/publications/"
   }
