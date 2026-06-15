@@ -1,5 +1,12 @@
 [
   {
+    "title": "Stabilizing Continuous-Time Kolen–Pollack Learning with a Scale-Balance Condition",
+    "authors": "Bacvanski, M. G., Ziyin, L. & Poggio, T.",
+    "venue": "High-dimensional Learning Dynamics (HiLD) Workshop at ICML 2026",
+    "year": "2026",
+    "link": "https://openreview.net/forum?id=kmJuMuHe4j"
+  },
+  {
     "title": "PoggioAI/MSc: ML Theory Research with Humans on the Loop",
     "authors": "Abdelmoneum, M., Beneventano, P. & Poggio, T.",
     "venue": "Technical Report (March 23, 2026)",
