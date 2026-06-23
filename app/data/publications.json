@@ -1,17 +1,66 @@
 [
   {
-    "title": "A Universal Compression Theory: Lottery Ticket Hypothesis and Superpolynomial Scaling Laws",
-    "authors": "Wang, H., Luo, D., Poggio, T., Chuang, I. L. & Ziyin, L.",
-    "venue": "ICLR 2026",
+    "title": "The Spectral Dynamics and Noise Geometry of Muon",
+    "authors": "Beneventano, P., Abdelmoneum, M. & Poggio, T.",
+    "venue": "Preprint (June 7, 2026)",
     "year": "2026",
-    "link": "https://arxiv.org/abs/2510.00504"
+    "link": "https://arxiv.org/abs/2606.08388"
+  },
+  {
+    "title": "Edge of Stability Selectively Shapes Learning Across the Data Distribution",
+    "authors": "Kwag, S., Ganesh, A., Poggio, T. & Beneventano, P.",
+    "venue": "High-dimensional Learning Dynamics (HiLD) Workshop at ICML 2026 (Poster)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2606.04212"
+  },
+  {
+    "title": "Do Deep Networks Forget Initialization? A Forgetting-Time View of Practical Inductive Bias",
+    "authors": "Das, M., Beneventano, P., Dey, S., McKinkey, G. H. & Poggio, T.",
+    "venue": "Preprint (May 27, 2026)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2605.29152"
+  },
+  {
+    "title": "Does Weight Decay Enhance Training Stability?",
+    "authors": "Saether, M., Kolic, A., Poggio, T. & Beneventano, P.",
+    "venue": "Preprint (May 15, 2026)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2605.16622"
+  },
+  {
+    "title": "Agentic Systems as Boosting Weak Reasoning Models",
+    "authors": "Sunkaraneni, V., Beneventano, P., Neumarker, R., Poggio, T. & Galanti, T.",
+    "venue": "Preprint (May 13, 2026)",
+    "year": "2026",
+    "link": "https://doi.org/10.48550/arXiv.2605.14163"
+  },
+  {
+    "title": "pAI/MSc: ML Theory Research with Humans on the Loop",
+    "authors": "Abdelmoneum, M., Beneventano, P. & Poggio, T.",
+    "venue": "CBMM Memo No. 160; arXiv preprint (April 22, 2026)",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2604.20622"
+  },
+  {
+    "title": "Too Sharp, Too Sure: When Calibration Follows Curvature",
+    "authors": "Morosini, A., Gjika, M., Poggio, T. & Beneventano, P.",
+    "venue": "High-dimensional Learning Dynamics (HiLD) Workshop at ICML 2026 (Poster)",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2604.20614"
   },
   {
     "title": "Momentum Further Constrains Sharpness at the Edge of Stochastic Stability",
     "authors": "Andreyev, A., Ananthkumar, A., Walden, M., Poggio, T. & Beneventano, P.",
-    "venue": "Preprint (April 15, 2026)",
+    "venue": "ICML 2026",
     "year": "2026",
     "link": "https://arxiv.org/abs/2604.14108"
+  },
+  {
+    "title": "Agent Systems for Academic Research Automation",
+    "authors": "Beneventano, P., Neumarker, R., Evgeniou, T., Bacvanski, M. G., Tiwary, K., Rimoldi, E., Hajoub, M., Gan, Y., Liao, Q., Abdelmoneum, M., Ziyin, L., Galanti, T., Pinto, A. & Poggio, T.",
+    "venue": "AI for Science Workshop at ICML 2026 (Poster)",
+    "year": "2026",
+    "link": "https://openreview.net/forum?id=iAfYyiCzev"
   },
   {
     "title": "Ubiquity of Hebbian Dynamics in Complex Learning Rules",
@@ -28,18 +77,18 @@
     "link": "https://openreview.net/forum?id=kmJuMuHe4j"
   },
   {
-    "title": "pAI/MSc: ML Theory Research with Humans on the Loop",
-    "authors": "Abdelmoneum, M., Beneventano, P. & Poggio, T.",
-    "venue": "Technical Report (March 23, 2026)",
-    "year": "2026",
-    "link": "https://poggioai.github.io/papers/poggioai-msc-v0.pdf"
-  },
-  {
     "title": "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series",
     "authors": "Cortesi, F. V., Iannone, G., Crippa, G., Poggio, T. & Beneventano, P.",
     "venue": "Preprint (March 3, 2026)",
     "year": "2026",
     "link": "https://doi.org/10.48550/arXiv.2603.02620"
+  },
+  {
+    "title": "A Universal Compression Theory: Lottery Ticket Hypothesis and Superpolynomial Scaling Laws",
+    "authors": "Wang, H., Luo, D., Poggio, T., Chuang, I. L. & Ziyin, L.",
+    "venue": "ICLR 2026",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2510.00504"
   },
   {
     "title": "A cortical motif for learning with vectorized errors",

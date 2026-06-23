@@ -12,18 +12,21 @@ export const metadata: Metadata = {
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
-// Ensure unique publications and sort by year
-const publications = rawPublications.filter((pub, index, self) =>
-    index === self.findIndex((t) => (
-        t.title === pub.title
-    ))
-).sort((a, b) => {
-    // Sort by year desc, then title asc
-    if (b.year !== a.year) {
-        return parseInt(b.year || "0") - parseInt(a.year || "0");
-    }
-    return a.title.localeCompare(b.title);
-});
+// Ensure unique publications and sort by year. Preserve source order within a
+// year so date-ordered data stays date-ordered on the page.
+const publications = rawPublications
+    .map((pub, sourceIndex) => ({ ...pub, sourceIndex }))
+    .filter((pub, index, self) =>
+        index === self.findIndex((t) => (
+            t.title === pub.title
+        ))
+    )
+    .sort((a, b) => {
+        if (b.year !== a.year) {
+            return parseInt(b.year || "0") - parseInt(a.year || "0");
+        }
+        return a.sourceIndex - b.sourceIndex;
+    });
 
 
 export default function PublicationsPage() {
