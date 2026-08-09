@@ -40,11 +40,6 @@ type TimelineItem = {
   description: string
 }
 
-type ProjectIdea = {
-  title: string
-  description: string
-}
-
 type Reading = {
   title: string
   detail: string
@@ -74,22 +69,17 @@ const facts: Fact[] = [
 ]
 
 const instructors: Person[] = [
-  { name: "Tomaso Poggio", role: "Instructor" },
-  { name: "Lorenzo Rosasco", role: "Instructor" },
   {
     name: "Pierfrancesco Beneventano",
-    role: "Instructor and TA",
+    role: "Instructor",
     href: "https://pierbeneventano.github.io",
   },
 ]
 
 const teachingTeam: Person[] = [
-  {
-    name: "Pierfrancesco Beneventano",
-    role: "TA",
-    href: "https://pierbeneventano.github.io",
-  },
-  { name: "Liu Ziyin", role: "TA" },
+  { name: "Yulu Gan", role: "TA" },
+  { name: "Federico V. Cortesi", role: "TA" },
+  { name: "Mahmoud Abdelmoneum", role: "TA" },
 ]
 
 const classicalTopics = [
@@ -176,104 +166,6 @@ const grading = [
   {
     label: "Final paper",
     value: "Up to 40 points for execution, positioning, clarity, novelty, limitations, and significance.",
-  },
-]
-
-const projectIdeas: ProjectIdea[] = [
-  {
-    title: "Non-vacuous bounds for random labels",
-    description:
-      "Revisit random-label experiments with overparameterized ReLU networks and test whether modern Rademacher-style bounds can predict generalization from training data.",
-  },
-  {
-    title: "Norm-based vs rank-based bounds",
-    description:
-      "Compare generalization bounds based on norms and ranks across the same networks and problems.",
-  },
-  {
-    title: "Neural collapse and loss functions",
-    description:
-      "Study when regularization is needed for neural collapse under square loss and exponential loss.",
-  },
-  {
-    title: "Intermediate neural collapse",
-    description:
-      "Investigate whether gradient descent can achieve intermediate neural collapse, and whether stochasticity or regularization is necessary.",
-  },
-  {
-    title: "Kolmogorov-Arnold representations",
-    description:
-      "Analyze approximation properties of KA-style representations and compare them with standard MLPs.",
-  },
-  {
-    title: "Adversarial examples",
-    description:
-      "Critically examine recent work that may clarify the puzzle of adversarial examples.",
-  },
-  {
-    title: "Double descent",
-    description:
-      "Review double descent claims in the context of recent theory and empirical evidence.",
-  },
-  {
-    title: "SGD vs layerwise optimization",
-    description:
-      "Compare standard feedforward training against staged polynomial residual regression on simple low-dimensional polynomial targets.",
-  },
-  {
-    title: "Invariant representations",
-    description:
-      "Explore whether transformation-invariant preprocessing can reduce sample complexity without relying on data augmentation.",
-  },
-  {
-    title: "PDEs and PINNs",
-    description:
-      "Study the approximation-theoretic foundations of deep networks for solving partial differential equations.",
-  },
-  {
-    title: "Definitions of superintelligence",
-    description:
-      "Formulate definitions that are achievable through supervised learning and definitions that are not.",
-  },
-  {
-    title: "Large Embedding Models and memory",
-    description:
-      "Test whether reconstructing full memories from partial fragments can model aspects of recall, dreams, and imagination.",
-  },
-  {
-    title: "Step-by-step learning with simple predictors",
-    description:
-      "Generate algorithmic step datasets and compare autoregressive and diffusion-style learning with linear threshold predictors and small baselines.",
-  },
-  {
-    title: "Associative memory and hippocampus",
-    description:
-      "Connect recent key-value and attention mechanisms to classic associative memory models and hippocampal theories.",
-  },
-  {
-    title: "Beneficial misalignment",
-    description:
-      "Study whether increasingly capable AI systems may benefit from representations that are less human-like.",
-  },
-  {
-    title: "Unsupervised contrastive learning in vision",
-    description:
-      "Investigate why augmentation-based contrastive pretraining improves downstream visual classification.",
-  },
-  {
-    title: "Prefix optimization for mathematics",
-    description:
-      "Optimize fixed-length token prefixes to improve mathematical output.",
-  },
-  {
-    title: "Attention heads across task families",
-    description:
-      "Test whether many attention heads help language tasks differently than arithmetic or algorithmic tasks.",
-  },
-  {
-    title: "Depth-width tradeoffs",
-    description:
-      "Under fixed compute or parameter budgets, compare deeper-narrow and shallower-wide transformers across language and arithmetic tasks.",
   },
 ]
 
@@ -673,36 +565,14 @@ export default function Course9520Page() {
               Research questions for the semester
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Some projects are well-defined with a clear path toward a paper;
-              others are intentionally exploratory. Students should reach out to
-              Pier with questions and use the project form to indicate their
-              preferences.
+              The project area will stay visible on the course page, but we are
+              leaving it empty for the moment while the project material is
+              prepared.
             </p>
-
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <ExternalTextLink href="https://forms.gle/d3Q8EEZiskYzCStQA">
-                Project form
-              </ExternalTextLink>
-              <ExternalTextLink href="https://poggio-lab.mit.edu/9-520/">
-                Public course page
-              </ExternalTextLink>
-            </div>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {projectIdeas.map((project, index) => (
-              <article key={project.title} className="border border-border bg-card p-5">
-                <div className="mb-4 flex h-9 w-9 items-center justify-center border border-border bg-background text-sm font-semibold text-foreground">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-                <h3 className="font-semibold text-foreground">
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {project.description}
-                </p>
-              </article>
-            ))}
+          <div className="border border-dashed border-border bg-card px-6 py-12 text-center">
+            <p className="text-lg font-medium text-foreground">Coming soon...</p>
           </div>
         </div>
       </section>
