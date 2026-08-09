@@ -73,7 +73,6 @@ export const peopleData: Section[] = [
             { name: "Mengjia Xu" },
             { name: "Akshay Rangamani" },
             { name: "Tomer Galanti" },
-            { name: "Andrea Pinto" },
             { name: "Arturo Deza" },
             { name: "Xu (Roland) Zihao" },
             { name: "Tomotake Sasaki" },
@@ -168,6 +167,7 @@ export const peopleData: Section[] = [
         title: "Former Masters Students & Visitors",
         type: "list",
         members: [
+            { name: "Andrea Pinto" },
             { name: "Gadi Geiger", affiliation: "Massachusetts Institute of Technology" },
             { name: "Laura Ying Schulz" },
 
