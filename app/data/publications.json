@@ -21,6 +21,13 @@
     "link": "https://doi.org/10.48550/arXiv.2605.29152"
   },
   {
+    "title": "Learning Sparse Compositional Functions with Norm-Constrained Neural Networks",
+    "authors": "Huang, S., Fiorito, L., Rosasco, L. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2605.25608",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2605.25608"
+  },
+  {
     "title": "Does Weight Decay Enhance Training Stability?",
     "authors": "Saether, M., Kolic, A., Poggio, T. & Beneventano, P.",
     "venue": "Preprint (May 15, 2026)",
@@ -33,6 +40,13 @@
     "venue": "Preprint (May 13, 2026)",
     "year": "2026",
     "link": "https://doi.org/10.48550/arXiv.2605.14163"
+  },
+  {
+    "title": "The Generalized Turing Test: A Foundation for Comparing Intelligence",
+    "authors": "Mitropolsky, D., Hong, S. S., Neumarker, R., Rimoldi, E. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2605.10851",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2605.10851"
   },
   {
     "title": "pAI/MSc: ML Theory Research with Humans on the Loop",
@@ -148,24 +162,66 @@
   },
   {
     "title": "On efficiently computable functions, deep networks and sparse compositionality",
-    "authors": "Poggio, T. A. & Xu, M.",
-    "venue": "CBMM Publication",
+    "authors": "Poggio, T.",
+    "venue": "arXiv preprint arXiv:2510.11942",
     "year": "2025",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/Deep_sparse_networks_approximate_efficiently_computable_functions_0.pdf"
+    "link": "https://arxiv.org/abs/2510.11942"
+  },
+  {
+    "title": "On Generalization Bounds for Neural Networks with Low Rank Layers",
+    "authors": "Pinto, A., Rangamani, A. & Poggio, T.",
+    "venue": "Proceedings of the 36th International Conference on Algorithmic Learning Theory (PMLR 272), 921-936",
+    "year": "2025",
+    "link": "https://proceedings.mlr.press/v272/pinto25a.html"
   },
   {
     "title": "Position: A Theory of Deep Learning Must Include Compositional Sparsity",
     "authors": "Danhofer, D. A., D’Ascenzo, D., Dubach, R. & Poggio, T.",
-    "venue": "CBMM Publication",
+    "venue": "Proceedings of the 42nd International Conference on Machine Learning (PMLR 267), 81199-81210",
     "year": "2025",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM%20Memo%20159.pdf"
+    "link": "https://proceedings.mlr.press/v267/danhofer25a.html"
   },
   {
-    "title": "What if Eye..? Computationally Recreating Vision Evolution",
-    "authors": "Tiwary, K. et al.",
-    "venue": "arXiv",
+    "title": "What if Eye...? Computationally Recreating Vision Evolution",
+    "authors": "Tiwary, K., Young, A., Tasneem, Z., Klinghoffer, T., Dave, A., Poggio, T., Nilsson, D.-E., Cheung, B. & Raskar, R.",
+    "venue": "arXiv preprint arXiv:2501.15001",
     "year": "2025",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/2501.15001v1.pdf"
+    "link": "https://arxiv.org/abs/2501.15001"
+  },
+  {
+    "title": "SGD with Weight Decay Secretly Minimizes the Ranks of Your Neural Networks",
+    "authors": "Galanti, T., Siegel, Z. S., Gupte, A. & Poggio, T.",
+    "venue": "Conference on Parsimony and Learning, PMLR 280:1388-1412",
+    "year": "2025",
+    "link": "https://proceedings.mlr.press/v280/galanti25a.html"
+  },
+  {
+    "title": "Training the Untrainable: Introducing Inductive Bias via Representational Alignment",
+    "authors": "Subramaniam, V., Mayo, D., Conwell, C., Poggio, T., Katz, B., Cheung, B. & Barbu, A.",
+    "venue": "Advances in Neural Information Processing Systems 38 (NeurIPS 2025)",
+    "year": "2025",
+    "link": "https://papers.nips.cc/paper_files/paper/2025/file/8b76bc305ccfb95010081d12b85c3b24-Paper-Conference.pdf"
+  },
+  {
+    "title": "Hierarchical Reasoning Models: Perspectives and Misconceptions",
+    "authors": "Ge, R., Liao, Q. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2510.00355",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2510.00355"
+  },
+  {
+    "title": "Unraveling Syntax: How Language Models Learn Context-Free Grammars",
+    "authors": "Schulz, L. Y., Mitropolsky, D. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2510.02524",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2510.02524"
+  },
+  {
+    "title": "Learning Multi-Index Models with Hyper-Kernel Ridge Regression",
+    "authors": "Huang, S., Labarrière, H., De Vito, E., Poggio, T. & Rosasco, L.",
+    "venue": "arXiv preprint arXiv:2510.02532",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2510.02532"
   },
   {
     "title": "Compositional Sparsity of Learnable Functions",
@@ -191,30 +247,30 @@
   {
     "title": "Formation of Representations in Neural Networks",
     "authors": "Ziyin, L., Chuang, I., Galanti, T. & Poggio, T.",
-    "venue": "CBMM Publication",
-    "year": "2024",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-150.pdf"
-  },
-  {
-    "title": "On Generalization Bounds for Neural Networks with Low Rank Layers",
-    "authors": "Pinto, A., Rangamani, A. & Poggio, T.",
-    "venue": "CBMM Publication",
-    "year": "2024",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-151.pdf"
+    "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+    "year": "2025",
+    "link": "https://openreview.net/forum?id=Njx1NjHIx4"
   },
   {
     "title": "On the Power of Decision Trees in Auto-Regressive Language Modeling",
     "authors": "Gan, Y., Galanti, T., Poggio, T. & Malach, E.",
-    "venue": "CBMM Publication",
+    "venue": "Advances in Neural Information Processing Systems 37 (NeurIPS 2024)",
     "year": "2024",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-149_0.pdf"
+    "link": "https://papers.nips.cc/paper_files/paper/2024/file/72176f95680c3fb27a0966f36d5d0c53-Paper-Conference.pdf"
+  },
+  {
+    "title": "How Neural Networks Learn the Support is an Implicit Regularization Effect of SGD",
+    "authors": "Beneventano, P., Pinto, A. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2406.11110",
+    "year": "2024",
+    "link": "https://arxiv.org/abs/2406.11110"
   },
   {
     "title": "Self-Assembly of a Biologically Plausible Learning Circuit",
-    "authors": "Liao, Q. et al.",
-    "venue": "CBMM Publication",
+    "authors": "Liao, Q., Ziyin, L., Gan, Y., Cheung, B., Harnett, M. & Poggio, T.",
+    "venue": "arXiv preprint arXiv:2412.20018",
     "year": "2024",
-    "link": "https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-152.pdf"
+    "link": "https://arxiv.org/abs/2412.20018"
   },
   {
     "title": "Cervelli menti algoritmi",

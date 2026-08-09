@@ -73,6 +73,7 @@ export const peopleData: Section[] = [
             { name: "Mengjia Xu" },
             { name: "Akshay Rangamani" },
             { name: "Tomer Galanti" },
+            { name: "Andrea Pinto" },
             { name: "Arturo Deza" },
             { name: "Xu (Roland) Zihao" },
             { name: "Tomotake Sasaki" },
