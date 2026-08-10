@@ -253,7 +253,7 @@ const schedule: ScheduleItem[] = [
   {
     date: "Thu, Oct 22",
     title: "From classical to modern deep learning",
-    instructor: "TP",
+    instructor: "PB + TP",
     slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
   },
   {
@@ -271,7 +271,7 @@ const schedule: ScheduleItem[] = [
   {
     date: "Tue, Nov 3",
     title: "Deep Learning Theory: Optimization",
-    instructor: "TP",
+    instructor: "PB",
     slideHref: `${slideBasePath}/15-deep-learning-optimization.pdf`,
   },
   {
@@ -300,37 +300,32 @@ const schedule: ScheduleItem[] = [
   },
   {
     date: "Thu, Nov 19",
-    title: "Project workshop and open discussion",
+    title: "Open",
     instructor: "Course staff",
-    note: "Reserved for project check-ins, open questions, and follow-up discussion.",
   },
   {
     date: "Tue, Nov 24",
-    title: "Project progress meeting",
+    title: "Open",
     instructor: "Course staff",
-    note: "Reserved for project support and research discussion.",
   },
   {
     date: "Tue, Dec 1",
-    title: "Student project presentations I",
+    title: "Open",
     instructor: "Course staff",
-    note: "Presentation slot based on the current project timeline.",
   },
   {
     date: "Thu, Dec 3",
-    title: "Student project presentations II",
+    title: "Open",
     instructor: "Course staff",
-    note: "Presentation slot based on the current project timeline.",
   },
   {
     date: "Tue, Dec 8",
-    title: "Wrap-up and final project discussion",
+    title: "Open",
     instructor: "Course staff",
-    note: "Final discussion before the end of term.",
   },
   {
     date: "Thu, Dec 10",
-    title: "Last day of classes and final paper due",
+    title: "Open",
     instructor: "Course staff",
     note: "MIT's fall 2026 last day of classes and the current final paper deadline.",
   },
@@ -387,37 +382,44 @@ const papersOfInterest: ReferenceItem[] = [
       "Why and When Can Deep-but Not Shallow-Networks Avoid the Curse of Dimensionality: A Review",
     detail:
       "T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, and Q. Liao, International Journal of Automation and Computing, 2017.",
+    href: "https://doi.org/10.1007/s11633-017-1054-2",
   },
   {
     title: "Compositional sparsity of learnable functions",
     detail:
       "T. Poggio and M. Fraser, Bulletin of the American Mathematical Society, 2024.",
+    href: "https://doi.org/10.1090/bull/1820",
   },
   {
     title:
       "Dynamics in Deep Classifiers Trained with the Square Loss: Normalization, Low Rank, Neural Collapse, and Generalization Bounds",
     detail:
       "M. Xu, A. Rangamani, Q. Liao, T. Galanti, and T. Poggio, Research, 2023.",
+    href: "https://doi.org/10.34133/research.0024",
   },
   {
     title: "Deep learning",
     detail:
       "Y. LeCun, Y. Bengio, and G. Hinton, Nature, 521(7553):436-444, 2015.",
+    href: "https://doi.org/10.1038/nature14539",
   },
   {
     title: "Mastering the game of Go with deep neural networks and tree search",
     detail:
       "D. Silver et al., Nature, 529(7587):484-489, 2016.",
+    href: "https://doi.org/10.1038/nature16961",
   },
   {
     title: "Highly accurate protein structure prediction with AlphaFold",
     detail:
       "J. Jumper et al., Nature, 596(7873):583-589, 2021.",
+    href: "https://doi.org/10.1038/s41586-021-03819-2",
   },
   {
     title: "Attention Is All You Need",
     detail:
       "A. Vaswani et al., Advances in Neural Information Processing Systems 30, 2017.",
+    href: "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
   },
 ]
 
@@ -426,16 +428,19 @@ const resourceLinks: ReferenceItem[] = [
     title: "How to Read a Paper",
     detail:
       "S. Keshav, ACM SIGCOMM Computer Communication Review, 37(3):83-84, 2007.",
+    href: "https://doi.org/10.1145/1273445.1273458",
   },
   {
     title: "Machine Learning 2017-2018",
     detail:
       "University of Genoa graduate machine learning course.",
+    href: "https://lcsl.unige.it/courses/ml/1718/",
   },
   {
     title: "Introductory Machine Learning Notes",
     detail:
       "L. Rosasco, University of Genoa, ML 2016/2017 lecture notes, Oct. 2016.",
+    href: "https://lcsl.unige.it/courses/ml/1718/MLNotes.pdf",
   },
 ]
 
@@ -476,6 +481,37 @@ function PersonLine({ person }: { person: Person }) {
       <ExternalTextLink href={person.href}>{person.name}</ExternalTextLink>
       <span className="text-muted-foreground"> - {person.role}</span>
     </li>
+  )
+}
+
+function ReferenceCard({ item }: { item: ReferenceItem }) {
+  const content = (
+    <>
+      <div className="flex items-start justify-between gap-4">
+        <h4 className="font-semibold text-foreground">{item.title}</h4>
+        {item.href && (
+          <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+        )}
+      </div>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        {item.detail}
+      </p>
+    </>
+  )
+
+  if (!item.href) {
+    return <div className="border border-border bg-background p-5">{content}</div>
+  }
+
+  return (
+    <a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block border border-border bg-background p-5 transition-colors hover:border-foreground/30"
+    >
+      {content}
+    </a>
   )
 }
 
@@ -885,9 +921,13 @@ export default function Course9520Page() {
                 </div>
                 <div className="flex items-start lg:justify-end">
                   {item.slideHref ? (
-                    <ExternalTextLink href={item.slideHref}>Slides</ExternalTextLink>
+                    <ExternalTextLink href={item.slideHref}>
+                      Fall 25 Slides
+                    </ExternalTextLink>
                   ) : (
-                    <span className="text-sm text-muted-foreground">No slides</span>
+                    <span className="text-sm text-muted-foreground">
+                      {item.title === "Open" ? "Open" : "No slides"}
+                    </span>
                   )}
                 </div>
               </div>
@@ -929,12 +969,7 @@ export default function Course9520Page() {
             </div>
             <div className="grid gap-4">
               {draftBook.map((item) => (
-                <div key={item.title} className="border border-border bg-background p-5">
-                  <h4 className="font-semibold text-foreground">{item.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.detail}
-                  </p>
-                </div>
+                <ReferenceCard key={item.title} item={item} />
               ))}
             </div>
           </div>
@@ -948,12 +983,7 @@ export default function Course9520Page() {
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {primaryReferences.map((item) => (
-                <div key={item.title} className="border border-border bg-background p-5">
-                  <h4 className="font-semibold text-foreground">{item.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.detail}
-                  </p>
-                </div>
+                <ReferenceCard key={item.title} item={item} />
               ))}
             </div>
           </div>
@@ -967,12 +997,7 @@ export default function Course9520Page() {
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {papersOfInterest.map((item) => (
-                <div key={item.title} className="border border-border bg-background p-5">
-                  <h4 className="font-semibold text-foreground">{item.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.detail}
-                  </p>
-                </div>
+                <ReferenceCard key={item.title} item={item} />
               ))}
             </div>
           </div>
@@ -986,12 +1011,7 @@ export default function Course9520Page() {
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {resourceLinks.map((item) => (
-                <div key={item.title} className="border border-border bg-background p-5">
-                  <h4 className="font-semibold text-foreground">{item.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.detail}
-                  </p>
-                </div>
+                <ReferenceCard key={item.title} item={item} />
               ))}
             </div>
           </div>
