@@ -40,9 +40,18 @@ type TimelineItem = {
   description: string
 }
 
-type Reading = {
+type ScheduleItem = {
+  date: string
+  title: string
+  instructor: string
+  slideHref?: string
+  note?: string
+}
+
+type ReferenceItem = {
   title: string
   detail: string
+  href?: string
 }
 
 const facts: Fact[] = [
@@ -69,6 +78,8 @@ const facts: Fact[] = [
 ]
 
 const instructors: Person[] = [
+  { name: "Tomaso Poggio", role: "Instructor" },
+  { name: "Lorenzo Rosasco", role: "Instructor" },
   {
     name: "Pierfrancesco Beneventano",
     role: "Instructor",
@@ -103,43 +114,43 @@ const deepLearningTopics = [
 
 const timeline: TimelineItem[] = [
   {
-    date: "Sep 26",
+    date: "September 25, 2026",
     title: "Groups and proposals",
     description:
       "Submit your group and indicate three project choices, or two listed projects plus one self-proposed project.",
   },
   {
-    date: "Oct 10",
+    date: "October 9, 2026",
     title: "Literature reviews and implications",
     description:
       "For each of the three indicated projects, submit 3-4 pages covering related work and consequences for theory and practice.",
   },
   {
-    date: "Oct 17",
+    date: "October 16, 2026",
     title: "Project plan",
     description:
       "Submit a concise plan explaining the chosen problem, expected result, proof or experiment strategy, and milestones.",
   },
   {
-    date: "Oct 31",
+    date: "October 30, 2026",
     title: "Initial checkpoint",
     description:
       "Submit early results: first plots, proof sketches, ablations, or a short account of what has been learned.",
   },
   {
-    date: "First two weeks of November",
+    date: "November 3-12, 2026",
     title: "Project discussions",
     description:
       "Meet during office hours to discuss progress, roadblocks, positioning, and next steps.",
   },
   {
-    date: "Dec 2-4",
+    date: "December 1-3, 2026",
     title: "Oral presentation",
     description:
       "Give an 8-minute presentation with up to 10 content slides covering motivation, related work, results, and implications.",
   },
   {
-    date: "Dec 10",
+    date: "December 10, 2026",
     title: "Final paper",
     description:
       "Submit the final paper and a link to a public code repository or runnable notebook.",
@@ -169,39 +180,262 @@ const grading = [
   },
 ]
 
-const primaryReadings: Reading[] = [
+const slideBasePath = "/assets/9-520/slides"
+
+const schedule: ScheduleItem[] = [
   {
-    title: "Machine Learning: a Regularization Approach",
-    detail:
-      "L. Rosasco and T. Poggio, MIT 9.520 lecture notes, draft manuscript.",
+    date: "Thu, Sep 10",
+    title: "Course overview, logistics, and why theory",
+    instructor: "TP / LR / PB",
+    slideHref: `${slideBasePath}/01-introduction.pdf`,
   },
   {
+    date: "Tue, Sep 15",
+    title: "Statistical Learning Theory",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/02-statistical-learning-theory.pdf`,
+  },
+  {
+    date: "Thu, Sep 17",
+    title: "Least squares and overparameterization",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/03-least-squares-and-overparameterization.pdf`,
+  },
+  {
+    date: "Tue, Sep 22",
+    title: "Logistic regression and SGD",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/04-logistic-regression-and-sgd.pdf`,
+  },
+  {
+    date: "Thu, Sep 24",
+    title: "Implicit Regularization",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/05-implicit-regularization.pdf`,
+  },
+  {
+    date: "Tue, Sep 29",
+    title: "Neural networks",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/06-neural-networks.pdf`,
+  },
+  {
+    date: "Thu, Oct 1",
+    title: "Random Features, NTK & RKHS",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/07-random-features-ntk-rkhs.pdf`,
+  },
+  {
+    date: "Tue, Oct 6",
+    title: "Infinite Width Neural Networks & RKBS",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/08-infinite-width-neural-networks-rkbs.pdf`,
+  },
+  {
+    date: "Thu, Oct 8",
+    title: "Learning bounds for linear least squares",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/09-learning-bounds-linear-least-squares.pdf`,
+  },
+  {
+    date: "Thu, Oct 15",
+    title: "Learning bounds for ERM",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/10-learning-bounds-for-erm.pdf`,
+    note: "MIT follows a Monday schedule on Tuesday, October 13, 2026, so there is no 9.520 meeting that day.",
+  },
+  {
+    date: "Tue, Oct 20",
+    title: "Sequential prediction as learning dynamical systems",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/11-sequential-prediction-dynamical-systems.pdf`,
+  },
+  {
+    date: "Thu, Oct 22",
+    title: "From classical to modern deep learning",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
+  },
+  {
+    date: "Tue, Oct 27",
+    title: "Deep Learning: approximation theory",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/13-approximation-theory.pdf`,
+  },
+  {
+    date: "Thu, Oct 29",
+    title: "Sparse Compositionality",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/14-sparse-compositionality.pdf`,
+  },
+  {
+    date: "Tue, Nov 3",
+    title: "Deep Learning Theory: Optimization",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/15-deep-learning-optimization.pdf`,
+  },
+  {
+    date: "Thu, Nov 5",
+    title: "Training neural networks: trainability",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/16-trainability.pdf`,
+  },
+  {
+    date: "Tue, Nov 10",
+    title: "Training neural networks: how we train",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/17-how-we-train.pdf`,
+  },
+  {
+    date: "Thu, Nov 12",
+    title: "Where training goes and its stability",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
+  },
+  {
+    date: "Tue, Nov 17",
+    title: "Towards a Learning Theory of Grammars",
+    instructor: "Dan Mitropolsky (guest)",
+    slideHref: `${slideBasePath}/19-learning-theory-of-grammars.pdf`,
+  },
+  {
+    date: "Thu, Nov 19",
+    title: "Project workshop and open discussion",
+    instructor: "Course staff",
+    note: "Reserved for project check-ins, open questions, and follow-up discussion.",
+  },
+  {
+    date: "Tue, Nov 24",
+    title: "Project progress meeting",
+    instructor: "Course staff",
+    note: "Reserved for project support and research discussion.",
+  },
+  {
+    date: "Tue, Dec 1",
+    title: "Student project presentations I",
+    instructor: "Course staff",
+    note: "Presentation slot based on the current project timeline.",
+  },
+  {
+    date: "Thu, Dec 3",
+    title: "Student project presentations II",
+    instructor: "Course staff",
+    note: "Presentation slot based on the current project timeline.",
+  },
+  {
+    date: "Tue, Dec 8",
+    title: "Wrap-up and final project discussion",
+    instructor: "Course staff",
+    note: "Final discussion before the end of term.",
+  },
+  {
+    date: "Thu, Dec 10",
+    title: "Last day of classes and final paper due",
+    instructor: "Course staff",
+    note: "MIT's fall 2026 last day of classes and the current final paper deadline.",
+  },
+]
+
+const draftBook: ReferenceItem[] = [
+  {
+    title: "Machine Learning: a Regularization Approach, MIT 9.520 Lecture Notes",
+    detail:
+      "L. Rosasco and T. Poggio, manuscript, Dec. 2017 (provided).",
+  },
+]
+
+const primaryReferences: ReferenceItem[] = [
+  {
     title: "Understanding Machine Learning: From Theory to Algorithms",
-    detail: "S. Shalev-Shwartz and S. Ben-David, Cambridge University Press, 2014.",
+    detail:
+      "S. Shalev-Shwartz and S. Ben-David, Cambridge University Press, 2014.",
   },
   {
     title: "Introduction to Statistical Learning Theory",
-    detail: "O. Bousquet, S. Boucheron, and G. Lugosi, Advanced Lectures on Machine Learning, 2004.",
+    detail:
+      "O. Bousquet, S. Boucheron, and G. Lugosi. In Advanced Lectures on Machine Learning, LNCS 3176, pp. 169-207, Springer, 2004.",
   },
   {
     title: "On The Mathematical Foundations of Learning",
-    detail: "F. Cucker and S. Smale, Bulletin of the AMS, 2002.",
+    detail:
+      "F. Cucker and S. Smale, Bulletin of the American Mathematical Society, 2002.",
   },
   {
     title: "A Probabilistic Theory of Pattern Recognition",
-    detail: "L. Devroye, L. Gyorfi, and G. Lugosi, Springer, 1997.",
+    detail:
+      "L. Devroye, L. Gyorfi, and G. Lugosi, Springer, 1997.",
   },
   {
     title: "Regularization Networks and Support Vector Machines",
-    detail: "T. Evgeniou, M. Pontil, and T. Poggio, Advances in Computational Mathematics, 2000.",
+    detail:
+      "T. Evgeniou, M. Pontil, and T. Poggio, Advances in Computational Mathematics, 2000.",
   },
   {
     title: "The Mathematics of Learning: Dealing with Data",
-    detail: "T. Poggio and S. Smale, Notices of the AMS, 2003.",
+    detail:
+      "T. Poggio and S. Smale, Notices of the AMS, 2003.",
   },
   {
     title: "Statistical Learning Theory",
     detail: "V. N. Vapnik, Wiley, 1998.",
+  },
+]
+
+const papersOfInterest: ReferenceItem[] = [
+  {
+    title:
+      "Why and When Can Deep-but Not Shallow-Networks Avoid the Curse of Dimensionality: A Review",
+    detail:
+      "T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, and Q. Liao, International Journal of Automation and Computing, 2017.",
+  },
+  {
+    title: "Compositional sparsity of learnable functions",
+    detail:
+      "T. Poggio and M. Fraser, Bulletin of the American Mathematical Society, 2024.",
+  },
+  {
+    title:
+      "Dynamics in Deep Classifiers Trained with the Square Loss: Normalization, Low Rank, Neural Collapse, and Generalization Bounds",
+    detail:
+      "M. Xu, A. Rangamani, Q. Liao, T. Galanti, and T. Poggio, Research, 2023.",
+  },
+  {
+    title: "Deep learning",
+    detail:
+      "Y. LeCun, Y. Bengio, and G. Hinton, Nature, 521(7553):436-444, 2015.",
+  },
+  {
+    title: "Mastering the game of Go with deep neural networks and tree search",
+    detail:
+      "D. Silver et al., Nature, 529(7587):484-489, 2016.",
+  },
+  {
+    title: "Highly accurate protein structure prediction with AlphaFold",
+    detail:
+      "J. Jumper et al., Nature, 596(7873):583-589, 2021.",
+  },
+  {
+    title: "Attention Is All You Need",
+    detail:
+      "A. Vaswani et al., Advances in Neural Information Processing Systems 30, 2017.",
+  },
+]
+
+const resourceLinks: ReferenceItem[] = [
+  {
+    title: "How to Read a Paper",
+    detail:
+      "S. Keshav, ACM SIGCOMM Computer Communication Review, 37(3):83-84, 2007.",
+  },
+  {
+    title: "Machine Learning 2017-2018",
+    detail:
+      "University of Genoa graduate machine learning course.",
+  },
+  {
+    title: "Introductory Machine Learning Notes",
+    detail:
+      "L. Rosasco, University of Genoa, ML 2016/2017 lecture notes, Oct. 2016.",
   },
 ]
 
@@ -577,57 +811,189 @@ export default function Course9520Page() {
         </div>
       </section>
 
+      <section id="syllabus" className="border-y border-border bg-card px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
+              Calendar and Syllabus
+            </p>
+            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
+              Fall 2026 meeting calendar using the ordered 2025 lecture sequence
+            </h2>
+            <p className="leading-relaxed text-muted-foreground">
+              This schedule follows MIT&apos;s official fall 2026 class calendar
+              for Tuesday/Thursday meetings and places the lecture decks from
+              last year in the same order. TP = Tomaso Poggio, LR = Lorenzo
+              Rosasco, and PB = Pierfrancesco Beneventano.
+            </p>
+          </div>
+
+          <div className="mb-8 grid gap-4 md:grid-cols-2">
+            <div className="border border-border bg-background p-5">
+              <h3 className="mb-2 font-semibold text-foreground">
+                MIT calendar notes
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The class starts on Thursday, September 10, 2026 because MIT&apos;s
+                first day of classes is Wednesday, September 9, 2026.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                There is no 9.520 meeting on Tuesday, October 13, 2026 because
+                MIT holds a Monday schedule that day, and there is no class on
+                Thursday, November 26, 2026 for Thanksgiving.
+              </p>
+            </div>
+            <div className="border border-border bg-background p-5">
+              <h3 className="mb-2 font-semibold text-foreground">
+                Slide archive
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                The lecture rows below link directly to the slide decks from
+                last year whenever slides are available.
+              </p>
+              <div className="mt-4">
+                <ExternalTextLink href="https://registrar.mit.edu/calendar/current-key-dates">
+                  MIT Registrar current key dates
+                </ExternalTextLink>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-3">
+            {schedule.map((item) => (
+              <div
+                key={`${item.date}-${item.title}`}
+                className="grid gap-4 border border-border bg-background p-5 lg:grid-cols-[8rem_1.8fr_11rem_9rem]"
+              >
+                <div>
+                  <p className="text-sm font-semibold text-foreground">
+                    {item.date}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  {item.note && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.note}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">
+                    {item.instructor}
+                  </p>
+                </div>
+                <div className="flex items-start lg:justify-end">
+                  {item.slideHref ? (
+                    <ExternalTextLink href={item.slideHref}>Slides</ExternalTextLink>
+                  ) : (
+                    <span className="text-sm text-muted-foreground">No slides</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="resources" className="border-t border-border bg-card px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Readings and Resources
+              References
             </p>
             <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Primary references for the course
+              Reading list and supporting resources
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Lecture notes are provided as independent draft chapters. The
-              references below are useful background reading, especially from
-              the theoretical viewpoint.
+              This section intentionally sits at the very end of the page. The
+              references below follow last year&apos;s syllabus structure and have
+              been cleaned up for consistency.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Notes covering the classes will be provided in the form of
+              independent chapters from a draft set of lecture notes. The books
+              and papers listed below are useful general references,
+              especially from the theoretical viewpoint, and additional
+              suggested readings can be attached to individual classes as
+              needed.
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {primaryReadings.map((reading) => (
-              <div key={reading.title} className="border border-border bg-background p-5">
-                <div className="mb-3 flex items-center gap-3">
-                  <FileText className="h-5 w-5 text-foreground" />
-                  <h3 className="font-semibold text-foreground">
-                    {reading.title}
-                  </h3>
-                </div>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {reading.detail}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 border border-border bg-background p-6">
-            <div className="mb-3 flex items-center gap-3">
-              <Presentation className="h-5 w-5 text-foreground" />
-              <h3 className="font-semibold text-foreground">
-                Course materials and updates
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <BookOpen className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Book (draft)
               </h3>
             </div>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Slides, notes, readings, project updates, and any schedule changes
-              can be added here as the semester evolves. For administrative
-              questions, email{" "}
-              <a
-                href="mailto:9.520@mit.edu"
-                className="font-medium text-foreground underline decoration-dotted underline-offset-4"
-              >
-                9.520@mit.edu
-              </a>
-              .
-            </p>
+            <div className="grid gap-4">
+              {draftBook.map((item) => (
+                <div key={item.title} className="border border-border bg-background p-5">
+                  <h4 className="font-semibold text-foreground">{item.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <FileText className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Primary References
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {primaryReferences.map((item) => (
+                <div key={item.title} className="border border-border bg-background p-5">
+                  <h4 className="font-semibold text-foreground">{item.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <Presentation className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Papers of Interest
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {papersOfInterest.map((item) => (
+                <div key={item.title} className="border border-border bg-background p-5">
+                  <h4 className="font-semibold text-foreground">{item.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <ArrowUpRight className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Resources and links
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {resourceLinks.map((item) => (
+                <div key={item.title} className="border border-border bg-background p-5">
+                  <h4 className="font-semibold text-foreground">{item.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
