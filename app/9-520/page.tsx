@@ -78,8 +78,16 @@ const facts: Fact[] = [
 ]
 
 const instructors: Person[] = [
-  { name: "Tomaso Poggio", role: "Instructor" },
-  { name: "Lorenzo Rosasco", role: "Instructor" },
+  {
+    name: "Tomaso Poggio",
+    role: "Instructor",
+    href: "https://mcgovern.mit.edu/profile/tomaso-poggio/",
+  },
+  {
+    name: "Lorenzo Rosasco",
+    role: "Instructor",
+    href: "https://web.mit.edu/lrosasco/www/",
+  },
   {
     name: "Pierfrancesco Beneventano",
     role: "Instructor",
