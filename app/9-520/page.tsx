@@ -96,6 +96,7 @@ const instructors: Person[] = [
 ]
 
 const teachingTeam: Person[] = [
+  { name: "Qianli Liao", role: "TA" },
   { name: "Yulu Gan", role: "TA" },
   { name: "Federico V. Cortesi", role: "TA" },
   { name: "Mahmoud Abdelmoneum", role: "TA" },
@@ -241,70 +242,68 @@ const schedule: ScheduleItem[] = [
   },
   {
     date: "Thu, Oct 8",
-    title: "Learning bounds for linear least squares",
-    instructor: "LR",
-    slideHref: `${slideBasePath}/09-learning-bounds-linear-least-squares.pdf`,
-  },
-  {
-    date: "Thu, Oct 15",
     title: "Learning bounds for ERM",
     instructor: "LR",
     slideHref: `${slideBasePath}/10-learning-bounds-for-erm.pdf`,
+  },
+  {
+    date: "Thu, Oct 15",
+    title: "From classical to modern deep learning",
+    instructor: "PB + TP",
+    slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
     note: "MIT follows a Monday schedule on Tuesday, October 13, 2026, so there is no 9.520 meeting that day.",
   },
   {
     date: "Tue, Oct 20",
-    title: "Sequential prediction as learning dynamical systems",
-    instructor: "LR",
-    slideHref: `${slideBasePath}/11-sequential-prediction-dynamical-systems.pdf`,
-  },
-  {
-    date: "Thu, Oct 22",
-    title: "From classical to modern deep learning",
-    instructor: "PB + TP",
-    slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
-  },
-  {
-    date: "Tue, Oct 27",
     title: "Deep Learning: approximation theory",
     instructor: "TP",
     slideHref: `${slideBasePath}/13-approximation-theory.pdf`,
   },
   {
-    date: "Thu, Oct 29",
+    date: "Thu, Oct 22",
     title: "Sparse Compositionality",
     instructor: "TP",
     slideHref: `${slideBasePath}/14-sparse-compositionality.pdf`,
   },
   {
-    date: "Tue, Nov 3",
+    date: "Tue, Oct 27",
     title: "Deep Learning Theory: Optimization",
     instructor: "PB",
     slideHref: `${slideBasePath}/15-deep-learning-optimization.pdf`,
   },
   {
-    date: "Thu, Nov 5",
+    date: "Thu, Oct 29",
     title: "Training neural networks: trainability",
     instructor: "PB",
     slideHref: `${slideBasePath}/16-trainability.pdf`,
   },
   {
-    date: "Tue, Nov 10",
+    date: "Tue, Nov 3",
     title: "Training neural networks: how we train",
     instructor: "PB",
     slideHref: `${slideBasePath}/17-how-we-train.pdf`,
   },
   {
-    date: "Thu, Nov 12",
+    date: "Thu, Nov 5",
     title: "Where training goes and its stability",
     instructor: "PB",
     slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
   },
   {
-    date: "Tue, Nov 17",
+    date: "Tue, Nov 10",
     title: "Towards a Learning Theory of Grammars",
     instructor: "Dan Mitropolsky (guest)",
     slideHref: `${slideBasePath}/19-learning-theory-of-grammars.pdf`,
+  },
+  {
+    date: "Thu, Nov 12",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Tue, Nov 17",
+    title: "Open",
+    instructor: "Course staff",
   },
   {
     date: "Thu, Nov 19",
@@ -588,6 +587,22 @@ export default function Course9520Page() {
                   )
                 })}
               </div>
+              <a
+                href="https://canvas.mit.edu/courses/40443"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-6 flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
+              >
+                <div>
+                  <p className="text-sm font-semibold text-foreground">
+                    Course Canvas
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Announcements, materials, and assignments
+                  </p>
+                </div>
+                <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+              </a>
               <div className="mt-6 border-t border-border pt-5 text-sm leading-relaxed text-muted-foreground">
                 Office hours: Pier, Tuesdays and Thursdays, 1:30 PM - 3:00 PM,
                 46-5155D. Email{" "}
