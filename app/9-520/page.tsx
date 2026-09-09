@@ -123,69 +123,52 @@ const deepLearningTopics = [
 
 const timeline: TimelineItem[] = [
   {
-    date: "September 25, 2026",
-    title: "Groups and proposals",
+    date: "Throughout the semester",
+    title: "Attendance quizzes (5 points)",
     description:
-      "Submit your group and indicate three project choices, or two listed projects plus one self-proposed project.",
+      "Attend class regularly and answer the in-class quizzes correctly. Completing quizzes for another student is a serious breach of MIT rules.",
+  },
+  {
+    date: "September 25, 2026",
+    title: "Form filled (no grade)",
+    description:
+      "Complete the Google Form with your group of one or two people and indicate either three projects from the official list or two listed projects plus one self-proposed project. For a self-proposed project, attach a PDF proposal of approximately 0.5-1 page.",
+  },
+  {
+    date: "October 2, 2026",
+    title: "Literature reviews and implications (up to 15 points)",
+    description:
+      "As a group, submit one 3-4 page document for each of the three indicated projects: 2-3 pages of substantial literature review and one final page with at least three detailed implications for machine learning theory and practice. Each document is graded from 1 to 5.",
   },
   {
     date: "October 9, 2026",
-    title: "Literature reviews and implications",
+    title: "Plan (no grade, up to 5 bonus points)",
     description:
-      "For each of the three indicated projects, submit 3-4 pages covering related work and consequences for theory and practice.",
-  },
-  {
-    date: "October 16, 2026",
-    title: "Project plan",
-    description:
-      "Submit a concise plan explaining the chosen problem, expected result, proof or experiment strategy, and milestones.",
+      "Submit 1-2 pages stating the selected problem, what you plan to achieve, how you plan to achieve it through proofs or experiments, and a realistic timeline. Earn up to 3 bonus points for selecting a listed problem and up to 2 for a particularly strong plan.",
   },
   {
     date: "October 30, 2026",
-    title: "Initial checkpoint",
+    title: "Initial checkpoint (up to 10 points)",
     description:
-      "Submit early results: first plots, proof sketches, ablations, or a short account of what has been learned.",
+      "Submit a short 1-2 page commentary with initial results, such as first plots or a proof sketch, demonstrating that the project started early and is on track.",
   },
   {
-    date: "November 3-12, 2026",
-    title: "Project discussions",
+    date: "First two weeks of November 2026",
+    title: "Project discussion (5 points)",
     description:
-      "Meet during office hours to discuss progress, roadblocks, positioning, and next steps.",
+      "Attend office hours to discuss your work with the course staff. Sign up through Calendly.",
   },
   {
-    date: "December 1-3, 2026",
-    title: "Oral presentation",
+    date: "December 1-4, 2026",
+    title: "Presentation (up to 25 points)",
     description:
-      "Give an 8-minute presentation with up to 10 content slides covering motivation, related work, results, and implications.",
+      "Give an 8-minute-sharp group presentation covering motivation, related work, the open question, results, and implications. Upload up to 10 content slides by the end of the presentation day. The presentation is worth 20 points and question answering 5 points; exceeding the time limit carries a 5-point penalty.",
   },
   {
-    date: "December 10, 2026",
-    title: "Final paper",
+    date: "December 11, 2026",
+    title: "Final paper (up to 40 points)",
     description:
-      "Submit the final paper and a link to a public code repository or runnable notebook.",
-  },
-]
-
-const grading = [
-  {
-    label: "Participation",
-    value: "Up to 10 points for active attendance, engagement, and project discussion.",
-  },
-  {
-    label: "Literature reviews",
-    value: "Up to 15 points across the three project reviews and implications documents.",
-  },
-  {
-    label: "Initial checkpoint",
-    value: "Up to 10 points for early evidence that the project is on track.",
-  },
-  {
-    label: "Presentation",
-    value: "Up to 25 points for motivation, results, clarity, organization, and answering questions.",
-  },
-  {
-    label: "Final paper",
-    value: "Up to 40 points for execution, positioning, clarity, novelty, limitations, and significance.",
+      "Submit the final paper and a public code repository. The main text must be 5-9 pages, with approximately 8 pages expected, followed by references and an optional appendix. Provide a Python notebook runnable in Google Colab with a small reproducible experiment.",
   },
 ]
 
@@ -587,22 +570,40 @@ export default function Course9520Page() {
                   )
                 })}
               </div>
-              <a
-                href="https://canvas.mit.edu/courses/40443"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-6 flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
-              >
-                <div>
-                  <p className="text-sm font-semibold text-foreground">
-                    Course Canvas
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Announcements, materials, and assignments
-                  </p>
-                </div>
-                <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
-              </a>
+              <div className="mt-6 space-y-3">
+                <a
+                  href="https://canvas.mit.edu/courses/40443"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      Course Canvas
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Announcements, materials, and assignments
+                    </p>
+                  </div>
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                </a>
+                <a
+                  href="https://canvas.mit.edu/courses/40443/pages/rules"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      Rules and Expectations
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Read the complete course policies on Canvas
+                    </p>
+                  </div>
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                </a>
+              </div>
               <div className="mt-6 border-t border-border pt-5 text-sm leading-relaxed text-muted-foreground">
                 Office hours: Pier, Tuesdays and Thursdays, 1:30 PM - 3:00 PM,
                 46-5155D. Email{" "}
@@ -724,152 +725,6 @@ export default function Course9520Page() {
         </div>
       </section>
 
-      <section id="rules" className="border-y border-border bg-card px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Rules and Expectations
-            </p>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Project-centered grading and research practice
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">
-              The current format removes traditional problem sets to give more
-              time to projects and introduces an oral presentation. The goal is
-              to understand how well students own their project, how clearly
-              they can position it within Statistical Learning Theory, and how
-              carefully they can connect theory, experiments, and implications.
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                Prerequisites
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                Part II is designed for students with a good background in ML.
-                The course uses calculus, linear algebra, probability, basic
-                optimization, and some functional or convex analysis. For course
-                6 students, expected background includes 6.041, 18.06, and an
-                introductory ML course such as 6.036, 6.401, or 6.867.
-              </p>
-            </div>
-            <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                AI Tools
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                Students are expected to use modern LLM-based tools when useful,
-                but must still read the relevant papers and be able to explain,
-                rework, and defend the work offline.
-              </p>
-            </div>
-            <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                Teams
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                Projects may be individual or in teams of two. Groups of two are
-                encouraged. Multiple teams may work on related problems, but
-                authorship and submission plans should be coordinated with the
-                staff.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="timeline" className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Timeline
-            </p>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Deliverables are designed to move projects early
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">
-              Deadlines are intended to make the project research process
-              concrete: choose a problem, understand the literature, plan the
-              path, show early evidence, present the work, and submit a paper.
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            {timeline.map((item) => (
-              <div
-                key={`${item.date}-${item.title}`}
-                className="grid gap-4 border border-border bg-card p-5 md:grid-cols-[11rem_1fr]"
-              >
-                <p className="text-sm font-semibold text-foreground">
-                  {item.date}
-                </p>
-                <div>
-                  <h3 className="font-semibold text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-card px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Grading
-            </p>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Participation plus project work
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">
-              The grading scheme is project-based: 10 points for participation
-              and up to 90 points for project-related activities, with possible
-              bonus points for a strong project plan.
-            </p>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2">
-            {grading.map((item) => (
-              <div key={item.label} className="border border-border bg-background p-5">
-                <h3 className="font-semibold text-foreground">{item.label}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {item.value}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Projects
-            </p>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Research questions for the semester
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">
-              The project area will stay visible on the course page, but we are
-              leaving it empty for the moment while the project material is
-              prepared.
-            </p>
-          </div>
-
-          <div className="border border-dashed border-border bg-card px-6 py-12 text-center">
-            <p className="text-lg font-medium text-foreground">Coming soon...</p>
-          </div>
-        </div>
-      </section>
-
       <section id="syllabus" className="border-y border-border bg-card px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-3xl">
@@ -888,7 +743,7 @@ export default function Course9520Page() {
           </div>
 
           <div className="mb-8 grid gap-4 md:grid-cols-2">
-            <div className="border border-border bg-background p-5">
+            <div className="border border-border bg-background p-6">
               <h3 className="mb-2 font-semibold text-foreground">
                 MIT calendar notes
               </h3>
@@ -902,7 +757,7 @@ export default function Course9520Page() {
                 Thursday, November 26, 2026 for Thanksgiving.
               </p>
             </div>
-            <div className="border border-border bg-background p-5">
+            <div className="border border-border bg-background p-6">
               <h3 className="mb-2 font-semibold text-foreground">
                 Slide archive
               </h3>
@@ -955,6 +810,81 @@ export default function Course9520Page() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
+              Timeline
+            </p>
+            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
+              Deliverables are designed to move projects early
+            </h2>
+            <p className="leading-relaxed text-muted-foreground">
+              Deadlines are intended to make the project research process
+              concrete: choose a problem, understand the literature, plan the
+              path, show early evidence, present the work, and submit a paper.
+            </p>
+            <div className="mt-6 border border-border bg-card p-5 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                Friday deadlines are due by 11:59 PM local time. After the first
+                missed deadline, each additional missed deadline carries a
+                3-point penalty, plus 3 points when a submission is more than
+                three days late. Late presentations and final papers are not
+                accepted.
+              </p>
+              <p className="mt-3">
+                A project that overlaps with a group member&apos;s current or past
+                research or coursework carries a 15-point penalty for the whole
+                group. Contact the teaching staff if you have any concerns.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            {timeline.map((item) => (
+              <div
+                key={`${item.date}-${item.title}`}
+                className="grid gap-4 border border-border bg-card p-5 md:grid-cols-[11rem_1fr]"
+              >
+                <p className="text-sm font-semibold text-foreground">
+                  {item.date}
+                </p>
+                <div>
+                  <h3 className="font-semibold text-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
+              Projects
+            </p>
+            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
+              Research questions for the semester
+            </h2>
+            <p className="leading-relaxed text-muted-foreground">
+              The project area will stay visible on the course page, but we are
+              leaving it empty for the moment while the project material is
+              prepared.
+            </p>
+          </div>
+
+          <div className="border border-dashed border-border bg-card px-6 py-12 text-center">
+            <p className="text-lg font-medium text-foreground">Coming soon...</p>
           </div>
         </div>
       </section>
