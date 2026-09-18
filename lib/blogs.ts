@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { foundationsPdfTitle } from '@/app/data/foundationsPdfTitle';
 
 const blogsDirectory = path.join(process.cwd(), 'content/blogs');
 
@@ -21,7 +22,8 @@ export async function getPostData(slug: string) {
         return null;
     }
 
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+        .replaceAll('{{FOUNDATIONS_PDF_TITLE}}', foundationsPdfTitle);
 
     // New standard format:
     // Line 1: # Title

@@ -10,6 +10,7 @@ export interface BlogPost {
 }
 
 import { latexBlogs } from "./latexBlogs";
+import { foundationsPdfTitle } from "./foundationsPdfTitle";
 
 const manualBlogs: BlogPost[] = [
     // Interesting Bits
@@ -24,8 +25,8 @@ const manualBlogs: BlogPost[] = [
         content: ""
     },
     {
-        slug: "thirty-lectures-foundations-deep-learning",
-        title: "Thirty Lectures on the Foundations of Deep Learning",
+        slug: "foundations-deep-learning",
+        title: foundationsPdfTitle,
         excerpt: "(PDF) by Tomaso Poggio, Gemini+ChatGPT. Intelligence and its Fundamental Principles.",
         date: "Jan 20, 2026",
         author: "Tomaso Poggio, Gemini, ChatGPT",

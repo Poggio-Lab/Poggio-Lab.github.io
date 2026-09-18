@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/buildBlogs.mjs && next build",
+    "dev": "node scripts/syncPdfTitle.mjs && next dev",
+    "build": "node scripts/syncPdfTitle.mjs && node scripts/buildBlogs.mjs && next build",
     "export": "next build && next export",
     "start": "next start",
     "lint": "eslint ."
@@ -75,6 +75,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "pdfjs-dist": "^4.10.38",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
