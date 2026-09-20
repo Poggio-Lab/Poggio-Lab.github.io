@@ -88,4 +88,4 @@ Over the coming weeks, this blog will explore:
 
 We are not at the end of the AI story. We are at the end of the beginning.
 
-To build AI we understand—AI we can trust, extend, and reason about—we must stop only engineering and start explaining. This series, based on the book Twenty-Six Lectures on the Foun-dations of Deep Learning, is an invitation to join that search.
+To build AI we understand—AI we can trust, extend, and reason about—we must stop only engineering and start explaining. This series, based on the book {{FOUNDATIONS_PDF_TITLE}}, is an invitation to join that search.

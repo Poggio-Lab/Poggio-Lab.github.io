@@ -40,14 +40,18 @@ type TimelineItem = {
   description: string
 }
 
-type ProjectIdea = {
+type ScheduleItem = {
+  date: string
   title: string
-  description: string
+  instructor: string
+  slideHref?: string
+  note?: string
 }
 
-type Reading = {
+type ReferenceItem = {
   title: string
   detail: string
+  href?: string
 }
 
 const facts: Fact[] = [
@@ -74,22 +78,28 @@ const facts: Fact[] = [
 ]
 
 const instructors: Person[] = [
-  { name: "Tomaso Poggio", role: "Instructor" },
-  { name: "Lorenzo Rosasco", role: "Instructor" },
+  {
+    name: "Tomaso Poggio",
+    role: "Instructor",
+    href: "https://mcgovern.mit.edu/profile/tomaso-poggio/",
+  },
+  {
+    name: "Lorenzo Rosasco",
+    role: "Instructor",
+    href: "https://web.mit.edu/lrosasco/www/",
+  },
   {
     name: "Pierfrancesco Beneventano",
-    role: "Instructor and TA",
+    role: "Instructor",
     href: "https://pierbeneventano.github.io",
   },
 ]
 
 const teachingTeam: Person[] = [
-  {
-    name: "Pierfrancesco Beneventano",
-    role: "TA",
-    href: "https://pierbeneventano.github.io",
-  },
-  { name: "Liu Ziyin", role: "TA" },
+  { name: "Qianli Liao", role: "TA" },
+  { name: "Yulu Gan", role: "TA" },
+  { name: "Federico V. Cortesi", role: "TA" },
+  { name: "Mahmoud Abdelmoneum", role: "TA" },
 ]
 
 const classicalTopics = [
@@ -113,203 +123,314 @@ const deepLearningTopics = [
 
 const timeline: TimelineItem[] = [
   {
-    date: "Sep 26",
-    title: "Groups and proposals",
+    date: "Throughout the semester",
+    title: "Attendance quizzes (5 points)",
     description:
-      "Submit your group and indicate three project choices, or two listed projects plus one self-proposed project.",
+      "Attend class regularly and answer the in-class quizzes correctly. Completing quizzes for another student is a serious breach of MIT rules.",
   },
   {
-    date: "Oct 10",
-    title: "Literature reviews and implications",
+    date: "September 25, 2026",
+    title: "Form filled (no grade)",
     description:
-      "For each of the three indicated projects, submit 3-4 pages covering related work and consequences for theory and practice.",
+      "Complete the Google Form with your group of one or two people and indicate either three projects from the official list or two listed projects plus one self-proposed project. For a self-proposed project, attach a PDF proposal of approximately 0.5-1 page.",
   },
   {
-    date: "Oct 17",
-    title: "Project plan",
+    date: "October 2, 2026",
+    title: "Literature reviews and implications (up to 15 points)",
     description:
-      "Submit a concise plan explaining the chosen problem, expected result, proof or experiment strategy, and milestones.",
+      "As a group, submit one 3-4 page document for each of the three indicated projects: 2-3 pages of substantial literature review and one final page with at least three detailed implications for machine learning theory and practice. Each document is graded from 1 to 5.",
   },
   {
-    date: "Oct 31",
-    title: "Initial checkpoint",
+    date: "October 9, 2026",
+    title: "Plan (no grade, up to 5 bonus points)",
     description:
-      "Submit early results: first plots, proof sketches, ablations, or a short account of what has been learned.",
+      "Submit 1-2 pages stating the selected problem, what you plan to achieve, how you plan to achieve it through proofs or experiments, and a realistic timeline. Earn up to 3 bonus points for selecting a listed problem and up to 2 for a particularly strong plan.",
   },
   {
-    date: "First two weeks of November",
-    title: "Project discussions",
+    date: "October 30, 2026",
+    title: "Initial checkpoint (up to 10 points)",
     description:
-      "Meet during office hours to discuss progress, roadblocks, positioning, and next steps.",
+      "Submit a short 1-2 page commentary with initial results, such as first plots or a proof sketch, demonstrating that the project started early and is on track.",
   },
   {
-    date: "Dec 2-4",
-    title: "Oral presentation",
+    date: "First two weeks of November 2026",
+    title: "Project discussion (5 points)",
     description:
-      "Give an 8-minute presentation with up to 10 content slides covering motivation, related work, results, and implications.",
+      "Attend office hours to discuss your work with the course staff. Sign up through Calendly.",
   },
   {
-    date: "Dec 10",
-    title: "Final paper",
+    date: "December 1-4, 2026",
+    title: "Presentation (up to 25 points)",
     description:
-      "Submit the final paper and a link to a public code repository or runnable notebook.",
+      "Give an 8-minute-sharp group presentation covering motivation, related work, the open question, results, and implications. Upload up to 10 content slides by the end of the presentation day. The presentation is worth 20 points and question answering 5 points; exceeding the time limit carries a 5-point penalty.",
+  },
+  {
+    date: "December 11, 2026",
+    title: "Final paper (up to 40 points)",
+    description:
+      "Submit the final paper and a public code repository. The main text must be 5-9 pages, with approximately 8 pages expected, followed by references and an optional appendix. Provide a Python notebook runnable in Google Colab with a small reproducible experiment.",
   },
 ]
 
-const grading = [
+const slideBasePath = "/assets/9-520/slides"
+
+const schedule: ScheduleItem[] = [
   {
-    label: "Participation",
-    value: "Up to 10 points for active attendance, engagement, and project discussion.",
+    date: "Thu, Sep 10",
+    title: "Course overview, logistics, and why theory",
+    instructor: "TP / LR / PB",
+    slideHref: `${slideBasePath}/01-introduction.pdf`,
   },
   {
-    label: "Literature reviews",
-    value: "Up to 15 points across the three project reviews and implications documents.",
+    date: "Tue, Sep 15",
+    title: "Statistical Learning Theory",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/02-statistical-learning-theory.pdf`,
   },
   {
-    label: "Initial checkpoint",
-    value: "Up to 10 points for early evidence that the project is on track.",
+    date: "Thu, Sep 17",
+    title: "Least squares and overparameterization",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/03-least-squares-and-overparameterization.pdf`,
   },
   {
-    label: "Presentation",
-    value: "Up to 25 points for motivation, results, clarity, organization, and answering questions.",
+    date: "Tue, Sep 22",
+    title: "Logistic regression and SGD",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/04-logistic-regression-and-sgd.pdf`,
   },
   {
-    label: "Final paper",
-    value: "Up to 40 points for execution, positioning, clarity, novelty, limitations, and significance.",
+    date: "Thu, Sep 24",
+    title: "Implicit Regularization",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/05-implicit-regularization.pdf`,
+  },
+  {
+    date: "Tue, Sep 29",
+    title: "Neural networks",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/06-neural-networks.pdf`,
+  },
+  {
+    date: "Thu, Oct 1",
+    title: "Random Features, NTK & RKHS",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/07-random-features-ntk-rkhs.pdf`,
+  },
+  {
+    date: "Tue, Oct 6",
+    title: "Infinite Width Neural Networks & RKBS",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/08-infinite-width-neural-networks-rkbs.pdf`,
+  },
+  {
+    date: "Thu, Oct 8",
+    title: "Learning bounds for ERM",
+    instructor: "LR",
+    slideHref: `${slideBasePath}/10-learning-bounds-for-erm.pdf`,
+  },
+  {
+    date: "Thu, Oct 15",
+    title: "From classical to modern deep learning",
+    instructor: "PB + TP",
+    slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
+    note: "MIT follows a Monday schedule on Tuesday, October 13, 2026, so there is no 9.520 meeting that day.",
+  },
+  {
+    date: "Tue, Oct 20",
+    title: "Deep Learning: approximation theory",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/13-approximation-theory.pdf`,
+  },
+  {
+    date: "Thu, Oct 22",
+    title: "Sparse Compositionality",
+    instructor: "TP",
+    slideHref: `${slideBasePath}/14-sparse-compositionality.pdf`,
+  },
+  {
+    date: "Tue, Oct 27",
+    title: "Deep Learning Theory: Optimization",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/15-deep-learning-optimization.pdf`,
+  },
+  {
+    date: "Thu, Oct 29",
+    title: "Training neural networks: trainability",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/16-trainability.pdf`,
+  },
+  {
+    date: "Tue, Nov 3",
+    title: "Training neural networks: how we train",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/17-how-we-train.pdf`,
+  },
+  {
+    date: "Thu, Nov 5",
+    title: "Where training goes and its stability",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
+  },
+  {
+    date: "Tue, Nov 10",
+    title: "Towards a Learning Theory of Grammars",
+    instructor: "Dan Mitropolsky (guest)",
+    slideHref: `${slideBasePath}/19-learning-theory-of-grammars.pdf`,
+  },
+  {
+    date: "Thu, Nov 12",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Tue, Nov 17",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Thu, Nov 19",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Tue, Nov 24",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Tue, Dec 1",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Thu, Dec 3",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Tue, Dec 8",
+    title: "Open",
+    instructor: "Course staff",
+  },
+  {
+    date: "Thu, Dec 10",
+    title: "Open",
+    instructor: "Course staff",
+    note: "MIT's fall 2026 last day of classes and the current final paper deadline.",
   },
 ]
 
-const projectIdeas: ProjectIdea[] = [
+const draftBook: ReferenceItem[] = [
   {
-    title: "Non-vacuous bounds for random labels",
-    description:
-      "Revisit random-label experiments with overparameterized ReLU networks and test whether modern Rademacher-style bounds can predict generalization from training data.",
-  },
-  {
-    title: "Norm-based vs rank-based bounds",
-    description:
-      "Compare generalization bounds based on norms and ranks across the same networks and problems.",
-  },
-  {
-    title: "Neural collapse and loss functions",
-    description:
-      "Study when regularization is needed for neural collapse under square loss and exponential loss.",
-  },
-  {
-    title: "Intermediate neural collapse",
-    description:
-      "Investigate whether gradient descent can achieve intermediate neural collapse, and whether stochasticity or regularization is necessary.",
-  },
-  {
-    title: "Kolmogorov-Arnold representations",
-    description:
-      "Analyze approximation properties of KA-style representations and compare them with standard MLPs.",
-  },
-  {
-    title: "Adversarial examples",
-    description:
-      "Critically examine recent work that may clarify the puzzle of adversarial examples.",
-  },
-  {
-    title: "Double descent",
-    description:
-      "Review double descent claims in the context of recent theory and empirical evidence.",
-  },
-  {
-    title: "SGD vs layerwise optimization",
-    description:
-      "Compare standard feedforward training against staged polynomial residual regression on simple low-dimensional polynomial targets.",
-  },
-  {
-    title: "Invariant representations",
-    description:
-      "Explore whether transformation-invariant preprocessing can reduce sample complexity without relying on data augmentation.",
-  },
-  {
-    title: "PDEs and PINNs",
-    description:
-      "Study the approximation-theoretic foundations of deep networks for solving partial differential equations.",
-  },
-  {
-    title: "Definitions of superintelligence",
-    description:
-      "Formulate definitions that are achievable through supervised learning and definitions that are not.",
-  },
-  {
-    title: "Large Embedding Models and memory",
-    description:
-      "Test whether reconstructing full memories from partial fragments can model aspects of recall, dreams, and imagination.",
-  },
-  {
-    title: "Step-by-step learning with simple predictors",
-    description:
-      "Generate algorithmic step datasets and compare autoregressive and diffusion-style learning with linear threshold predictors and small baselines.",
-  },
-  {
-    title: "Associative memory and hippocampus",
-    description:
-      "Connect recent key-value and attention mechanisms to classic associative memory models and hippocampal theories.",
-  },
-  {
-    title: "Beneficial misalignment",
-    description:
-      "Study whether increasingly capable AI systems may benefit from representations that are less human-like.",
-  },
-  {
-    title: "Unsupervised contrastive learning in vision",
-    description:
-      "Investigate why augmentation-based contrastive pretraining improves downstream visual classification.",
-  },
-  {
-    title: "Prefix optimization for mathematics",
-    description:
-      "Optimize fixed-length token prefixes to improve mathematical output.",
-  },
-  {
-    title: "Attention heads across task families",
-    description:
-      "Test whether many attention heads help language tasks differently than arithmetic or algorithmic tasks.",
-  },
-  {
-    title: "Depth-width tradeoffs",
-    description:
-      "Under fixed compute or parameter budgets, compare deeper-narrow and shallower-wide transformers across language and arithmetic tasks.",
-  },
-]
-
-const primaryReadings: Reading[] = [
-  {
-    title: "Machine Learning: a Regularization Approach",
+    title: "Machine Learning: a Regularization Approach, MIT 9.520 Lecture Notes",
     detail:
-      "L. Rosasco and T. Poggio, MIT 9.520 lecture notes, draft manuscript.",
+      "L. Rosasco and T. Poggio, manuscript, Dec. 2017 (provided).",
   },
+]
+
+const primaryReferences: ReferenceItem[] = [
   {
     title: "Understanding Machine Learning: From Theory to Algorithms",
-    detail: "S. Shalev-Shwartz and S. Ben-David, Cambridge University Press, 2014.",
+    detail:
+      "S. Shalev-Shwartz and S. Ben-David, Cambridge University Press, 2014.",
   },
   {
     title: "Introduction to Statistical Learning Theory",
-    detail: "O. Bousquet, S. Boucheron, and G. Lugosi, Advanced Lectures on Machine Learning, 2004.",
+    detail:
+      "O. Bousquet, S. Boucheron, and G. Lugosi. In Advanced Lectures on Machine Learning, LNCS 3176, pp. 169-207, Springer, 2004.",
   },
   {
     title: "On The Mathematical Foundations of Learning",
-    detail: "F. Cucker and S. Smale, Bulletin of the AMS, 2002.",
+    detail:
+      "F. Cucker and S. Smale, Bulletin of the American Mathematical Society, 2002.",
   },
   {
     title: "A Probabilistic Theory of Pattern Recognition",
-    detail: "L. Devroye, L. Gyorfi, and G. Lugosi, Springer, 1997.",
+    detail:
+      "L. Devroye, L. Gyorfi, and G. Lugosi, Springer, 1997.",
   },
   {
     title: "Regularization Networks and Support Vector Machines",
-    detail: "T. Evgeniou, M. Pontil, and T. Poggio, Advances in Computational Mathematics, 2000.",
+    detail:
+      "T. Evgeniou, M. Pontil, and T. Poggio, Advances in Computational Mathematics, 2000.",
   },
   {
     title: "The Mathematics of Learning: Dealing with Data",
-    detail: "T. Poggio and S. Smale, Notices of the AMS, 2003.",
+    detail:
+      "T. Poggio and S. Smale, Notices of the AMS, 2003.",
   },
   {
     title: "Statistical Learning Theory",
     detail: "V. N. Vapnik, Wiley, 1998.",
+  },
+]
+
+const papersOfInterest: ReferenceItem[] = [
+  {
+    title:
+      "Why and When Can Deep-but Not Shallow-Networks Avoid the Curse of Dimensionality: A Review",
+    detail:
+      "T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, and Q. Liao, International Journal of Automation and Computing, 2017.",
+    href: "https://doi.org/10.1007/s11633-017-1054-2",
+  },
+  {
+    title: "Compositional sparsity of learnable functions",
+    detail:
+      "T. Poggio and M. Fraser, Bulletin of the American Mathematical Society, 2024.",
+    href: "https://doi.org/10.1090/bull/1820",
+  },
+  {
+    title:
+      "Dynamics in Deep Classifiers Trained with the Square Loss: Normalization, Low Rank, Neural Collapse, and Generalization Bounds",
+    detail:
+      "M. Xu, A. Rangamani, Q. Liao, T. Galanti, and T. Poggio, Research, 2023.",
+    href: "https://doi.org/10.34133/research.0024",
+  },
+  {
+    title: "Deep learning",
+    detail:
+      "Y. LeCun, Y. Bengio, and G. Hinton, Nature, 521(7553):436-444, 2015.",
+    href: "https://doi.org/10.1038/nature14539",
+  },
+  {
+    title: "Mastering the game of Go with deep neural networks and tree search",
+    detail:
+      "D. Silver et al., Nature, 529(7587):484-489, 2016.",
+    href: "https://doi.org/10.1038/nature16961",
+  },
+  {
+    title: "Highly accurate protein structure prediction with AlphaFold",
+    detail:
+      "J. Jumper et al., Nature, 596(7873):583-589, 2021.",
+    href: "https://doi.org/10.1038/s41586-021-03819-2",
+  },
+  {
+    title: "Attention Is All You Need",
+    detail:
+      "A. Vaswani et al., Advances in Neural Information Processing Systems 30, 2017.",
+    href: "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+  },
+]
+
+const resourceLinks: ReferenceItem[] = [
+  {
+    title: "How to Read a Paper",
+    detail:
+      "S. Keshav, ACM SIGCOMM Computer Communication Review, 37(3):83-84, 2007.",
+    href: "https://doi.org/10.1145/1273445.1273458",
+  },
+  {
+    title: "Machine Learning 2017-2018",
+    detail:
+      "University of Genoa graduate machine learning course.",
+    href: "https://lcsl.unige.it/courses/ml/1718/",
+  },
+  {
+    title: "Introductory Machine Learning Notes",
+    detail:
+      "L. Rosasco, University of Genoa, ML 2016/2017 lecture notes, Oct. 2016.",
+    href: "https://lcsl.unige.it/courses/ml/1718/MLNotes.pdf",
   },
 ]
 
@@ -350,6 +471,37 @@ function PersonLine({ person }: { person: Person }) {
       <ExternalTextLink href={person.href}>{person.name}</ExternalTextLink>
       <span className="text-muted-foreground"> - {person.role}</span>
     </li>
+  )
+}
+
+function ReferenceCard({ item }: { item: ReferenceItem }) {
+  const content = (
+    <>
+      <div className="flex items-start justify-between gap-4">
+        <h4 className="font-semibold text-foreground">{item.title}</h4>
+        {item.href && (
+          <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+        )}
+      </div>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        {item.detail}
+      </p>
+    </>
+  )
+
+  if (!item.href) {
+    return <div className="border border-border bg-background p-5">{content}</div>
+  }
+
+  return (
+    <a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block border border-border bg-background p-5 transition-colors hover:border-foreground/30"
+    >
+      {content}
+    </a>
   )
 }
 
@@ -417,6 +569,40 @@ export default function Course9520Page() {
                     </div>
                   )
                 })}
+              </div>
+              <div className="mt-6 space-y-3">
+                <a
+                  href="https://canvas.mit.edu/courses/40443"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      Course Canvas
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Announcements, materials, and assignments
+                    </p>
+                  </div>
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                </a>
+                <a
+                  href="https://canvas.mit.edu/courses/40443/pages/rules"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 border border-border bg-background p-4 transition-colors hover:border-foreground/30"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">
+                      Rules and Expectations
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Read the complete course policies on Canvas
+                    </p>
+                  </div>
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                </a>
               </div>
               <div className="mt-6 border-t border-border pt-5 text-sm leading-relaxed text-muted-foreground">
                 Office hours: Pier, Tuesdays and Thursdays, 1:30 PM - 3:00 PM,
@@ -539,58 +725,91 @@ export default function Course9520Page() {
         </div>
       </section>
 
-      <section id="rules" className="border-y border-border bg-card px-6 py-20">
+      <section id="syllabus" className="border-y border-border bg-card px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Rules and Expectations
+              Calendar and Syllabus
             </p>
             <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Project-centered grading and research practice
+              Fall 2026 meeting calendar using the ordered 2025 lecture sequence
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              The current format removes traditional problem sets to give more
-              time to projects and introduces an oral presentation. The goal is
-              to understand how well students own their project, how clearly
-              they can position it within Statistical Learning Theory, and how
-              carefully they can connect theory, experiments, and implications.
+              This schedule follows MIT&apos;s official fall 2026 class calendar
+              for Tuesday/Thursday meetings and places the lecture decks from
+              last year in the same order. TP = Tomaso Poggio, LR = Lorenzo
+              Rosasco, and PB = Pierfrancesco Beneventano.
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mb-8 grid gap-4 md:grid-cols-2">
             <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                Prerequisites
+              <h3 className="mb-2 font-semibold text-foreground">
+                MIT calendar notes
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Part II is designed for students with a good background in ML.
-                The course uses calculus, linear algebra, probability, basic
-                optimization, and some functional or convex analysis. For course
-                6 students, expected background includes 6.041, 18.06, and an
-                introductory ML course such as 6.036, 6.401, or 6.867.
+                The class starts on Thursday, September 10, 2026 because MIT&apos;s
+                first day of classes is Wednesday, September 9, 2026.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                There is no 9.520 meeting on Tuesday, October 13, 2026 because
+                MIT holds a Monday schedule that day, and there is no class on
+                Thursday, November 26, 2026 for Thanksgiving.
               </p>
             </div>
             <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                AI Tools
+              <h3 className="mb-2 font-semibold text-foreground">
+                Slide archive
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Students are expected to use modern LLM-based tools when useful,
-                but must still read the relevant papers and be able to explain,
-                rework, and defend the work offline.
+                The lecture rows below link directly to the slide decks from
+                last year whenever slides are available.
               </p>
+              <div className="mt-4">
+                <ExternalTextLink href="https://registrar.mit.edu/calendar/current-key-dates">
+                  MIT Registrar current key dates
+                </ExternalTextLink>
+              </div>
             </div>
-            <div className="border border-border bg-background p-6">
-              <h3 className="mb-3 text-xl font-semibold text-foreground">
-                Teams
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                Projects may be individual or in teams of two. Groups of two are
-                encouraged. Multiple teams may work on related problems, but
-                authorship and submission plans should be coordinated with the
-                staff.
-              </p>
-            </div>
+          </div>
+
+          <div className="grid gap-3">
+            {schedule.map((item) => (
+              <div
+                key={`${item.date}-${item.title}`}
+                className="grid gap-4 border border-border bg-background p-5 lg:grid-cols-[8rem_1.8fr_11rem_9rem]"
+              >
+                <div>
+                  <p className="text-sm font-semibold text-foreground">
+                    {item.date}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  {item.note && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.note}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-foreground">
+                    {item.instructor}
+                  </p>
+                </div>
+                <div className="flex items-start lg:justify-end">
+                  {item.slideHref ? (
+                    <ExternalTextLink href={item.slideHref}>
+                      Fall 25 Slides
+                    </ExternalTextLink>
+                  ) : (
+                    <span className="text-sm text-muted-foreground">
+                      {item.title === "Open" ? "Open" : "No slides"}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -609,6 +828,20 @@ export default function Course9520Page() {
               concrete: choose a problem, understand the literature, plan the
               path, show early evidence, present the work, and submit a paper.
             </p>
+            <div className="mt-6 border border-border bg-card p-5 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                Friday deadlines are due by 11:59 PM local time. After the first
+                missed deadline, each additional missed deadline carries a
+                3-point penalty, plus 3 points when a submission is more than
+                three days late. Late presentations and final papers are not
+                accepted.
+              </p>
+              <p className="mt-3">
+                A project that overlaps with a group member&apos;s current or past
+                research or coursework carries a 15-point penalty for the whole
+                group. Contact the teaching staff if you have any concerns.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-4">
@@ -634,35 +867,6 @@ export default function Course9520Page() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-card px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Grading
-            </p>
-            <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Participation plus project work
-            </h2>
-            <p className="leading-relaxed text-muted-foreground">
-              The grading scheme is project-based: 10 points for participation
-              and up to 90 points for project-related activities, with possible
-              bonus points for a strong project plan.
-            </p>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2">
-            {grading.map((item) => (
-              <div key={item.label} className="border border-border bg-background p-5">
-                <h3 className="font-semibold text-foreground">{item.label}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {item.value}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="projects" className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-3xl">
@@ -673,36 +877,14 @@ export default function Course9520Page() {
               Research questions for the semester
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Some projects are well-defined with a clear path toward a paper;
-              others are intentionally exploratory. Students should reach out to
-              Pier with questions and use the project form to indicate their
-              preferences.
+              The project area will stay visible on the course page, but we are
+              leaving it empty for the moment while the project material is
+              prepared.
             </p>
-
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <ExternalTextLink href="https://forms.gle/d3Q8EEZiskYzCStQA">
-                Project form
-              </ExternalTextLink>
-              <ExternalTextLink href="https://poggio-lab.mit.edu/9-520/">
-                Public course page
-              </ExternalTextLink>
-            </div>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {projectIdeas.map((project, index) => (
-              <article key={project.title} className="border border-border bg-card p-5">
-                <div className="mb-4 flex h-9 w-9 items-center justify-center border border-border bg-background text-sm font-semibold text-foreground">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-                <h3 className="font-semibold text-foreground">
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {project.description}
-                </p>
-              </article>
-            ))}
+          <div className="border border-dashed border-border bg-card px-6 py-12 text-center">
+            <p className="text-lg font-medium text-foreground">Coming soon...</p>
           </div>
         </div>
       </section>
@@ -711,53 +893,80 @@ export default function Course9520Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase text-muted-foreground">
-              Readings and Resources
+              References
             </p>
             <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Primary references for the course
+              Reading list and supporting resources
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              Lecture notes are provided as independent draft chapters. The
-              references below are useful background reading, especially from
-              the theoretical viewpoint.
+              This section intentionally sits at the very end of the page. The
+              references below follow last year&apos;s syllabus structure and have
+              been cleaned up for consistency.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Notes covering the classes will be provided in the form of
+              independent chapters from a draft set of lecture notes. The books
+              and papers listed below are useful general references,
+              especially from the theoretical viewpoint, and additional
+              suggested readings can be attached to individual classes as
+              needed.
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {primaryReadings.map((reading) => (
-              <div key={reading.title} className="border border-border bg-background p-5">
-                <div className="mb-3 flex items-center gap-3">
-                  <FileText className="h-5 w-5 text-foreground" />
-                  <h3 className="font-semibold text-foreground">
-                    {reading.title}
-                  </h3>
-                </div>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {reading.detail}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 border border-border bg-background p-6">
-            <div className="mb-3 flex items-center gap-3">
-              <Presentation className="h-5 w-5 text-foreground" />
-              <h3 className="font-semibold text-foreground">
-                Course materials and updates
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <BookOpen className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Book (draft)
               </h3>
             </div>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Slides, notes, readings, project updates, and any schedule changes
-              can be added here as the semester evolves. For administrative
-              questions, email{" "}
-              <a
-                href="mailto:9.520@mit.edu"
-                className="font-medium text-foreground underline decoration-dotted underline-offset-4"
-              >
-                9.520@mit.edu
-              </a>
-              .
-            </p>
+            <div className="grid gap-4">
+              {draftBook.map((item) => (
+                <ReferenceCard key={item.title} item={item} />
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <FileText className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Primary References
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {primaryReferences.map((item) => (
+                <ReferenceCard key={item.title} item={item} />
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3">
+              <Presentation className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Papers of Interest
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {papersOfInterest.map((item) => (
+                <ReferenceCard key={item.title} item={item} />
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <ArrowUpRight className="h-5 w-5 text-foreground" />
+              <h3 className="text-xl font-semibold text-foreground">
+                Resources and links
+              </h3>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {resourceLinks.map((item) => (
+                <ReferenceCard key={item.title} item={item} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
