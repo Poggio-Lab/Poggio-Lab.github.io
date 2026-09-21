@@ -207,7 +207,7 @@ const schedule: ScheduleItem[] = [
   },
   {
     date: "Tue, Sep 29",
-    title: "Neural networks",
+    title: "Neural Networks",
     instructor: "LR",
     slideHref: `${slideBasePath}/06-neural-networks.pdf`,
   },
@@ -219,104 +219,102 @@ const schedule: ScheduleItem[] = [
   },
   {
     date: "Tue, Oct 6",
-    title: "Infinite Width Neural Networks & RKBS",
+    title: "Infinite-Width Neural Networks & RKBS",
     instructor: "LR",
     slideHref: `${slideBasePath}/08-infinite-width-neural-networks-rkbs.pdf`,
   },
   {
     date: "Thu, Oct 8",
-    title: "Learning bounds for ERM",
+    title: "Learning Theory: Approximation and Estimation Errors",
     instructor: "LR",
     slideHref: `${slideBasePath}/10-learning-bounds-for-erm.pdf`,
   },
   {
     date: "Thu, Oct 15",
-    title: "From classical to modern deep learning",
+    title: "From Classical to Modern Deep Learning",
     instructor: "PB + TP",
     slideHref: `${slideBasePath}/12-classical-to-modern.pdf`,
     note: "MIT follows a Monday schedule on Tuesday, October 13, 2026, so there is no 9.520 meeting that day.",
   },
   {
     date: "Tue, Oct 20",
-    title: "Deep Learning: approximation theory",
+    title: "Deep Learning: Approximation Theory",
     instructor: "TP",
     slideHref: `${slideBasePath}/13-approximation-theory.pdf`,
   },
   {
     date: "Thu, Oct 22",
-    title: "Sparse Compositionality",
+    title: "Sparse Compositionality and Generalization",
     instructor: "TP",
     slideHref: `${slideBasePath}/14-sparse-compositionality.pdf`,
   },
   {
     date: "Tue, Oct 27",
-    title: "Deep Learning Theory: Optimization",
-    instructor: "PB",
-    slideHref: `${slideBasePath}/15-deep-learning-optimization.pdf`,
-  },
-  {
-    date: "Thu, Oct 29",
-    title: "Training neural networks: trainability",
+    title: "Overview of Convex + Non-convex optimization",
     instructor: "PB",
     slideHref: `${slideBasePath}/16-trainability.pdf`,
   },
   {
-    date: "Tue, Nov 3",
-    title: "Training neural networks: how we train",
+    date: "Thu, Oct 29",
+    title: "Training Neural Networks: How We Train",
     instructor: "PB",
     slideHref: `${slideBasePath}/17-how-we-train.pdf`,
   },
   {
+    date: "Tue, Nov 3",
+    title: "Multi Index models: SGD and Computational/Statistical Gaps",
+    instructor: "TBA",
+  },
+  {
     date: "Thu, Nov 5",
-    title: "Where training goes and its stability",
+    title: "Genericity and Training on Polynomial",
+    instructor: "TP + PB",
+  },
+  {
+    date: "Tue, Nov 10",
+    title: "Location of Convergence and Stability of Training",
     instructor: "PB",
     slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
   },
   {
-    date: "Tue, Nov 10",
-    title: "Towards a Learning Theory of Grammars",
-    instructor: "Dan Mitropolsky (guest)",
-    slideHref: `${slideBasePath}/19-learning-theory-of-grammars.pdf`,
-  },
-  {
     date: "Thu, Nov 12",
-    title: "Open",
-    instructor: "Course staff",
+    title: "Intro to LLM and Pretraining",
+    instructor: "TBA",
   },
   {
     date: "Tue, Nov 17",
-    title: "Open",
-    instructor: "Course staff",
+    title: "Post-training LLMs",
+    instructor: "PB + Yulu",
   },
   {
     date: "Thu, Nov 19",
-    title: "Open",
-    instructor: "Course staff",
+    title: "Agentic Systems",
+    instructor: "PB + Mahmoud Abdelmoneum",
   },
   {
     date: "Tue, Nov 24",
-    title: "Open",
-    instructor: "Course staff",
+    title: "Neural Networks in the Financial Markets",
+    instructor: "Atlas Wang",
   },
   {
     date: "Tue, Dec 1",
-    title: "Open",
+    title: "Project Presentations",
     instructor: "Course staff",
   },
   {
-    date: "Thu, Dec 3",
-    title: "Open",
+    date: "Wed, Dec 2",
+    title: "Panel",
     instructor: "Course staff",
   },
   {
     date: "Tue, Dec 8",
-    title: "Open",
-    instructor: "Course staff",
+    title: "TBA",
+    instructor: "TBA",
   },
   {
     date: "Thu, Dec 10",
-    title: "Open",
-    instructor: "Course staff",
+    title: "TBA",
+    instructor: "TBA",
     note: "MIT's fall 2026 last day of classes and the current final paper deadline.",
   },
 ]
@@ -732,13 +730,13 @@ export default function Course9520Page() {
               Calendar and Syllabus
             </p>
             <h2 className="mb-4 text-3xl font-semibold text-foreground text-balance md:text-4xl">
-              Fall 2026 meeting calendar using the ordered 2025 lecture sequence
+              Fall 2026 course schedule
             </h2>
             <p className="leading-relaxed text-muted-foreground">
-              This schedule follows MIT&apos;s official fall 2026 class calendar
-              for Tuesday/Thursday meetings and places the lecture decks from
-              last year in the same order. TP = Tomaso Poggio, LR = Lorenzo
-              Rosasco, and PB = Pierfrancesco Beneventano.
+              This schedule follows the official Fall 2026 syllabus. Archived
+              Fall 2025 lecture decks are linked where they match the scheduled
+              topic. TP = Tomaso Poggio, LR = Lorenzo Rosasco, and PB =
+              Pierfrancesco Beneventano.
             </p>
           </div>
 
