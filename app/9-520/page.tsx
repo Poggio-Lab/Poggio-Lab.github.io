@@ -279,7 +279,7 @@ const schedule: ScheduleItem[] = [
   {
     date: "Thu, Nov 12",
     title: "Intro to LLM and Pretraining",
-    instructor: "TBA",
+    instructor: "Blake Woodworth",
   },
   {
     date: "Tue, Nov 17",
