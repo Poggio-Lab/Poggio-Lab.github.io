@@ -45,6 +45,12 @@ cd Poggio-Lab.github.io
 npm run dev
 ```
 
+The Foundations of Deep Learning update takes its title from the cover of
+`public/assets/FoundationsDeepLearning.pdf`. Replacing that PDF and running
+`npm run build` (or restarting `npm run dev`) updates the title on the home page,
+the Blog & Updates page, and the related blog post. The GitHub Pages workflow
+also runs this build when the PDF is pushed.
+
 # Make a new blog post:
 
 1. `git pull`
