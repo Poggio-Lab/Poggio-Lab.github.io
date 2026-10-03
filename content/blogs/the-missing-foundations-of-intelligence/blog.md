@@ -1,6 +1,8 @@
 # The Missing Foundations of Intelligence
-Date: January 10, 2026
-By Tomaso Poggio, John Gabrieli
+
+Date: January 10, 2026 
+
+By Tomaso Poggio, John Gabrieli Buchet
 
 Modern AI works, but we don’t know why. Here is a proposal for the fundamental principles that explain it.
 
@@ -21,15 +23,12 @@ Intelligence—natural or artificial—must rest on fundamental principles, just
 This is not merely philosophical. It is an empirical necessity. Three facts constrain us in the search for principles of intelligence:
 
 1. Intelligence exists in nature. Biological evolution, through a long and blind optimization process, produced human intelligence. Any true theory of intelligence must therefore be compatible with evolution.
-
 2. Artificial intelligence now exists. Transformers, diffusion models, and large associative memories succeed because they exploit deep structural regularities—not because of magic. They are a physical reality. Their success is evidence of underlying principles we have not yet articulated.
-
 3. These two forms of intelligence cannot be unrelated. Evolution discovered natural intel-ligence; engineering discovered artificial intelligence. The principles that explain both are likely to be shared or tightly connected.
 
 From these constraints and a survey of scientific evidence, two mathematical ideas repeatedly emerge as candidates for foundational laws:
 
 1. Sparse Compositionality
-
 2. Genericity
 
 These are not architectural details or engineering heuristics. They are candidates for the laws that make intelligence possible.
@@ -69,7 +68,6 @@ Together, they point toward a unified picture of intelligence—one that explain
 These two principles are not slogans. Each corresponds to precise mathematical properties.
 
 - Sparse compositionality follows from the requirement that the functions we aim to learn are efficiently computable. Under standard computational models (Turing machines, Boolean circuits), efficient computability forces any such function to be realized by a bounded-fan-in, layered computation graph—a sparse compositional DAG.1
-
 - Genericity is more conjectural but equally concrete. It corresponds to assuming that the functions we care about possess sufficiently strong low-order components (for example, non-negligible linear terms) and are stable under small perturbations. These properties ensure informative gradients and robust solutions.
 
 Some of these links are already provable as theorems; others remain working assumptions guiding ongoing research.
@@ -79,11 +77,8 @@ Some of these links are already provable as theorems; others remain working assu
 Over the coming weeks, this blog will explore:
 
 - the mathematics of sparse compositionality and genericity,
-
 - the role of evolution in developing the first learning systems,
-
 - the computational logic of reflexes, perception, memory, and reasoning,
-
 - the strengths and limitations of modern architectures such as Transformers and Diffusion models.
 
 We are not at the end of the AI story. We are at the end of the beginning.
