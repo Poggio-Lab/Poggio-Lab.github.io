@@ -250,31 +250,31 @@ const schedule: ScheduleItem[] = [
   },
   {
     date: "Tue, Oct 27",
-    title: "Overview of Convex + Non-convex optimization",
+    title: "Optimization 1: Intro to Data and Compute",
     instructor: "PB",
     slideHref: `${slideBasePath}/16-trainability.pdf`,
   },
   {
     date: "Thu, Oct 29",
-    title: "Training Neural Networks: How We Train",
+    title: "Optimization 2: Practice from First Principles",
     instructor: "PB",
     slideHref: `${slideBasePath}/17-how-we-train.pdf`,
   },
   {
     date: "Tue, Nov 3",
     title: "Multi Index models: SGD and Computational/Statistical Gaps",
-    instructor: "TBA",
+    instructor: "Alex Damian",
   },
   {
     date: "Thu, Nov 5",
-    title: "Genericity and Training on Polynomial",
-    instructor: "TP + PB",
+    title: "Optimization 3: Where Does the Optimizer Go? How/Why?",
+    instructor: "PB",
+    slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
   },
   {
     date: "Tue, Nov 10",
-    title: "Location of Convergence and Stability of Training",
+    title: "?",
     instructor: "PB",
-    slideHref: `${slideBasePath}/18-where-training-goes-and-stability.pdf`,
   },
   {
     date: "Thu, Nov 12",
